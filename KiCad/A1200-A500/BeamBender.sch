@@ -303,4 +303,21 @@ Wire Wire Line
 Wire Wire Line
 	2900 1650 3650 1650
 Connection ~ 3250 1000
+$Comp
+L BeamBender:STX-3501-3N J3
+U 1 1 652864E9
+P 10150 4200
+F 0 "J3" H 10100 4517 50  0000 C CNN
+F 1 "STX-3501-3N" H 10100 4426 50  0000 C CNN
+F 2 "BeamBender:STX35013N" H 9950 4850 50  0001 L BNN
+F 3 "" H 9700 4250 50  0001 L BNN
+	1    10150 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 10500 4150 2    50   Input ~ 0
+GND
+Text GLabel 9700 4150 0    50   Input ~ 0
+L_AUDIO
+Text GLabel 9700 4250 0    50   Input ~ 0
+R_AUDIO
 $EndSCHEMATC
