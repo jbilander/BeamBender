@@ -147,7 +147,7 @@ Text GLabel 1150 5400 0    50   Input ~ 0
 R3_3V3
 Text GLabel 1150 3100 0    50   Input ~ 0
 GND
-Text GLabel 10300 3450 3    50   Input ~ 0
+Text GLabel 10300 3600 3    50   Input ~ 0
 GND
 Text GLabel 1150 3300 0    50   Input ~ 0
 GND
@@ -338,12 +338,12 @@ GND
 $Comp
 L BeamBender:D5V0F4U10MR-13 D1
 U 1 1 65246756
-P 7400 1900
-F 0 "D1" H 7400 2365 50  0000 C CNN
-F 1 "D5V0F4U10MR-13" H 7400 2274 50  0000 C CNN
-F 2 "BeamBender:SOP50P490X110-10N" H 7800 2200 50  0001 L CNN
-F 3 "" H 7800 2100 50  0001 L CNN
-	1    7400 1900
+P 8050 1900
+F 0 "D1" H 8050 2365 50  0000 C CNN
+F 1 "D5V0F4U10MR-13" H 8050 2274 50  0000 C CNN
+F 2 "BeamBender:SOP50P490X110-10N" H 8450 2200 50  0001 L CNN
+F 3 "" H 8450 2100 50  0001 L CNN
+	1    8050 1900
 	1    0    0    -1  
 $EndComp
 Text GLabel 6000 2000 2    50   Output ~ 0
@@ -351,35 +351,35 @@ D0+
 Text GLabel 6000 2100 2    50   Output ~ 0
 D0-
 Text GLabel 6000 2300 2    50   Output ~ 0
-TX1+
+D1+
 Text GLabel 6000 2400 2    50   Output ~ 0
-TX1-
+D1-
 Text GLabel 6000 2600 2    50   Output ~ 0
-TX2+
+D2+
 Text GLabel 6000 2700 2    50   Output ~ 0
-TX2-
+D2-
 Text GLabel 6000 2900 2    50   Output ~ 0
 CK+
 Text GLabel 6000 3000 2    50   Output ~ 0
 CK-
-Text GLabel 6850 1700 0    50   Input ~ 0
+Text GLabel 7500 1700 0    50   Input ~ 0
 CK-
-Text GLabel 6850 1800 0    50   Input ~ 0
+Text GLabel 7500 1800 0    50   Input ~ 0
 CK+
-Text GLabel 7950 1700 2    50   Input ~ 0
+Text GLabel 8600 1700 2    50   Input ~ 0
 CK-
-Text GLabel 7950 1800 2    50   Input ~ 0
+Text GLabel 8600 1800 2    50   Input ~ 0
 CK+
-Text GLabel 6850 2000 0    50   Input ~ 0
+Text GLabel 7500 2000 0    50   Input ~ 0
 D0-
-Text GLabel 6850 2100 0    50   Input ~ 0
+Text GLabel 7500 2100 0    50   Input ~ 0
 D0+
-Text GLabel 7950 2000 2    50   Input ~ 0
+Text GLabel 8600 2000 2    50   Input ~ 0
 D0-
-Text GLabel 7950 2100 2    50   Input ~ 0
+Text GLabel 8600 2100 2    50   Input ~ 0
 D0+
-NoConn ~ 6850 1900
-Text GLabel 7950 1900 2    50   Input ~ 0
+NoConn ~ 7500 1900
+Text GLabel 8600 1900 2    50   Input ~ 0
 GND
 Text GLabel 9700 2250 0    50   Input ~ 0
 CK-
@@ -389,4 +389,240 @@ Text GLabel 9700 2050 0    50   Input ~ 0
 D0-
 Text GLabel 9700 1950 0    50   Input ~ 0
 D0+
+$Comp
+L BeamBender:D5V0F4U10MR-13 D2
+U 1 1 652A2640
+P 8050 2800
+F 0 "D2" H 8050 3265 50  0000 C CNN
+F 1 "D5V0F4U10MR-13" H 8050 3174 50  0000 C CNN
+F 2 "BeamBender:SOP50P490X110-10N" H 8450 3100 50  0001 L CNN
+F 3 "" H 8450 3000 50  0001 L CNN
+	1    8050 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 7500 2600 0    50   Input ~ 0
+D1-
+Text GLabel 7500 2700 0    50   Input ~ 0
+D1+
+Text GLabel 7500 2900 0    50   Input ~ 0
+D2-
+Text GLabel 7500 3000 0    50   Input ~ 0
+D2+
+Text GLabel 8600 2600 2    50   Input ~ 0
+D1-
+Text GLabel 8600 2700 2    50   Input ~ 0
+D1+
+Text GLabel 8600 2900 2    50   Input ~ 0
+D2-
+Text GLabel 8600 3000 2    50   Input ~ 0
+D2+
+Text GLabel 8600 2800 2    50   Input ~ 0
+GND
+NoConn ~ 7500 2800
+Text GLabel 9700 1850 0    50   Input ~ 0
+D1-
+Text GLabel 9700 1750 0    50   Input ~ 0
+D1+
+Text GLabel 9700 1650 0    50   Input ~ 0
+D2-
+Text GLabel 9700 1550 0    50   Input ~ 0
+D2+
+$Comp
+L BeamBender:D5V0F4U10MR-13 D3
+U 1 1 652AB064
+P 8050 3700
+F 0 "D3" H 8050 4165 50  0000 C CNN
+F 1 "D5V0F4U10MR-13" H 8050 4074 50  0000 C CNN
+F 2 "BeamBender:SOP50P490X110-10N" H 8450 4000 50  0001 L CNN
+F 3 "" H 8450 3900 50  0001 L CNN
+	1    8050 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 9700 3050 0    50   Output ~ 0
+HPD
+Text GLabel 7500 3800 0    50   Output ~ 0
+HPD
+Text GLabel 8600 3800 2    50   Input ~ 0
+HPD
+Text GLabel 3700 5700 0    50   Input ~ 0
+HPD
+$Comp
+L Device:R_Small R4
+U 1 1 652DC9C5
+P 3850 5900
+F 0 "R4" H 3909 5900 50  0000 L CNN
+F 1 "10k" V 3750 5850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3850 5900 50  0001 C CNN
+F 3 "~" H 3850 5900 50  0001 C CNN
+	1    3850 5900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3700 6100 0    50   Input ~ 0
+GND
+Wire Wire Line
+	3700 5700 3850 5700
+$Comp
+L Device:R_Small R8
+U 1 1 6531102F
+P 4100 5900
+F 0 "R8" H 4159 5900 50  0000 L CNN
+F 1 "2k" V 4100 5850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4100 5900 50  0001 C CNN
+F 3 "~" H 4100 5900 50  0001 C CNN
+	1    4100 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5800 4400 5800
+Text Label 4100 5800 0    50   ~ 0
+PD
+Wire Wire Line
+	4100 6100 3850 6100
+Wire Wire Line
+	3850 6100 3850 6000
+Wire Wire Line
+	3700 6100 3850 6100
+Connection ~ 3850 6100
+Wire Wire Line
+	4100 6000 4100 6100
+Wire Wire Line
+	4400 5700 3850 5700
+Wire Wire Line
+	3850 5700 3850 5800
+Connection ~ 3850 5700
+Text GLabel 4100 5400 0    50   Input ~ 0
+GND
+Wire Wire Line
+	4100 5400 4250 5400
+Wire Wire Line
+	4250 5400 4250 5500
+Wire Wire Line
+	4250 5500 4400 5500
+Connection ~ 4250 5400
+Wire Wire Line
+	4250 5400 4400 5400
+NoConn ~ 9700 2450
+Wire Wire Line
+	10300 3450 10300 3500
+Wire Wire Line
+	10400 3450 10400 3500
+Wire Wire Line
+	10400 3500 10300 3500
+Connection ~ 10300 3500
+Wire Wire Line
+	10300 3500 10300 3600
+Text GLabel 6650 1700 2    50   Output ~ 0
+DDC_SCL
+Text GLabel 6650 1800 2    50   BiDi ~ 0
+DDC_SDA
+Text GLabel 9700 2750 0    50   BiDi ~ 0
+DDC_SDA
+Text GLabel 7500 3500 0    50   Input ~ 0
+DDC_SCL
+Text GLabel 8600 3500 2    50   Input ~ 0
+DDC_SCL
+Text GLabel 7500 3600 0    50   BiDi ~ 0
+DDC_SDA
+Text GLabel 8600 3600 2    50   BiDi ~ 0
+DDC_SDA
+Text GLabel 8600 3700 2    50   Input ~ 0
+GND
+NoConn ~ 7500 3700
+$Comp
+L Device:R_Small R2
+U 1 1 6532BC2D
+P 6550 1500
+F 0 "R2" H 6600 1500 50  0000 L CNN
+F 1 "2k" V 6550 1450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6550 1500 50  0001 C CNN
+F 3 "~" H 6550 1500 50  0001 C CNN
+	1    6550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 6532D8B1
+P 6450 1500
+F 0 "R1" H 6300 1500 50  0000 L CNN
+F 1 "2k" V 6450 1450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6450 1500 50  0001 C CNN
+F 3 "~" H 6450 1500 50  0001 C CNN
+	1    6450 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 6750 1350 2    50   Input ~ 0
+VCC
+Wire Wire Line
+	6450 1600 6450 1700
+Connection ~ 6450 1700
+Wire Wire Line
+	6450 1700 6650 1700
+Wire Wire Line
+	6550 1600 6550 1800
+Connection ~ 6550 1800
+Wire Wire Line
+	6550 1800 6650 1800
+Wire Wire Line
+	6550 1400 6550 1350
+Wire Wire Line
+	6550 1350 6750 1350
+Wire Wire Line
+	6450 1400 6450 1350
+Wire Wire Line
+	6450 1350 6550 1350
+Connection ~ 6550 1350
+Text GLabel 9700 2650 0    50   Input ~ 0
+DDC_SCL
+Wire Wire Line
+	6000 1700 6450 1700
+Wire Wire Line
+	6000 1800 6550 1800
+Text GLabel 4400 2900 0    50   Input ~ 0
+B0_FPGA
+Text GLabel 4400 3000 0    50   Input ~ 0
+B1_FPGA
+Text GLabel 4400 3100 0    50   Input ~ 0
+B2_FPGA
+Text GLabel 4400 3200 0    50   Input ~ 0
+B3_FPGA
+Text GLabel 4400 3300 0    50   Input ~ 0
+B4_FPGA
+Text GLabel 4400 3400 0    50   Input ~ 0
+B5_FPGA
+Text GLabel 4400 3500 0    50   Input ~ 0
+B6_FPGA
+Text GLabel 4400 3600 0    50   Input ~ 0
+B7_FPGA
+Text GLabel 4400 3700 0    50   Input ~ 0
+G0_FPGA
+Text GLabel 4400 3800 0    50   Input ~ 0
+G1_FPGA
+Text GLabel 4400 3900 0    50   Input ~ 0
+G2_FPGA
+Text GLabel 4400 4000 0    50   Input ~ 0
+G3_FPGA
+Text GLabel 4400 4100 0    50   Input ~ 0
+G4_FPGA
+Text GLabel 4400 4200 0    50   Input ~ 0
+G5_FPGA
+Text GLabel 4400 4300 0    50   Input ~ 0
+G6_FPGA
+Text GLabel 4400 4400 0    50   Input ~ 0
+G7_FPGA
+Text GLabel 4400 4500 0    50   Input ~ 0
+R0_FPGA
+Text GLabel 4400 4600 0    50   Input ~ 0
+R1_FPGA
+Text GLabel 4400 4700 0    50   Input ~ 0
+R2_FPGA
+Text GLabel 4400 4800 0    50   Input ~ 0
+R3_FPGA
+Text GLabel 4400 4900 0    50   Input ~ 0
+R4_FPGA
+Text GLabel 4400 5000 0    50   Input ~ 0
+R5_FPGA
+Text GLabel 4400 5100 0    50   Input ~ 0
+R6_FPGA
+Text GLabel 4400 5200 0    50   Input ~ 0
+R7_FPGA
 $EndSCHEMATC
