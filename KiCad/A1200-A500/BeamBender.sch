@@ -320,4 +320,19 @@ Text GLabel 9700 4150 0    50   Input ~ 0
 L_AUDIO
 Text GLabel 9700 4250 0    50   Input ~ 0
 R_AUDIO
+$Comp
+L BeamBender:ADV7513BSWZ U3
+U 1 1 652C51A9
+P 5950 4500
+F 0 "U3" H 5950 7567 50  0000 C CNN
+F 1 "ADV7513BSWZ" H 5950 7476 50  0000 C CNN
+F 2 "BeamBender:TQFP-64-1EP_10x10mm_P0.5mm_EP5x5mm" H 5950 4500 50  0001 L BNN
+F 3 "" H 5950 4500 50  0001 L BNN
+F 4 "LQFP -64 Analog Devices" H 5950 4500 50  0001 L BNN "Package"
+F 5 "\\n165 MHz High Performance HDMI Transmitter\\n" H 5950 4500 50  0001 L BNN "Description"
+	1    5950 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 6750 5900 2    50   Input ~ 0
+GND
 $EndSCHEMATC
