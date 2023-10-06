@@ -625,4 +625,44 @@ Text GLabel 4400 5100 0    50   Input ~ 0
 R6_FPGA
 Text GLabel 4400 5200 0    50   Input ~ 0
 R7_FPGA
+Wire Wire Line
+	9900 3450 9900 3500
+Wire Wire Line
+	9900 3500 10000 3500
+Wire Wire Line
+	10000 3450 10000 3500
+Connection ~ 10000 3500
+Wire Wire Line
+	10000 3500 10100 3500
+Wire Wire Line
+	10100 3450 10100 3500
+Connection ~ 10100 3500
+Wire Wire Line
+	10100 3500 10200 3500
+Wire Wire Line
+	10200 3450 10200 3500
+Connection ~ 10200 3500
+Wire Wire Line
+	10200 3500 10300 3500
+NoConn ~ 9700 2950
+Text GLabel 6400 900  2    50   Input ~ 0
+AVDD
+Wire Wire Line
+	6000 900  6200 900 
+$Comp
+L Device:C_Small C6
+U 1 1 653C1DFE
+P 6200 800
+F 0 "C6" H 6292 800 50  0000 L CNN
+F 1 "C_Small" H 6292 755 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6200 800 50  0001 C CNN
+F 3 "~" H 6200 800 50  0001 C CNN
+	1    6200 800 
+	1    0    0    -1  
+$EndComp
+Connection ~ 6200 900 
+Wire Wire Line
+	6200 900  6400 900 
+Text GLabel 6200 700  1    50   Input ~ 0
+GND
 $EndSCHEMATC
