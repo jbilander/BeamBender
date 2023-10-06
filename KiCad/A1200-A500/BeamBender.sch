@@ -230,7 +230,7 @@ F 3 "https://en.wikipedia.org/wiki/HDMI" H 10125 2350 50  0001 C CNN
 	1    10100 2350
 	1    0    0    -1  
 $EndComp
-Text GLabel 10100 1250 1    50   Input ~ 0
+Text GLabel 10100 1150 2    50   Input ~ 0
 VCC
 Text GLabel 1150 2400 0    50   Input ~ 0
 C14M_3V3
@@ -338,12 +338,12 @@ GND
 $Comp
 L BeamBender:D5V0F4U10MR-13 D1
 U 1 1 65246756
-P 8050 1900
-F 0 "D1" H 8050 2365 50  0000 C CNN
-F 1 "D5V0F4U10MR-13" H 8050 2274 50  0000 C CNN
-F 2 "BeamBender:SOP50P490X110-10N" H 8450 2200 50  0001 L CNN
-F 3 "" H 8450 2100 50  0001 L CNN
-	1    8050 1900
+P 8250 1800
+F 0 "D1" H 8250 1800 50  0000 C CNN
+F 1 "D5V0F4U10MR-13" H 8250 2174 50  0000 C CNN
+F 2 "BeamBender:SOP50P490X110-10N" H 8650 2100 50  0001 L CNN
+F 3 "" H 8650 2000 50  0001 L CNN
+	1    8250 1800
 	1    0    0    -1  
 $EndComp
 Text GLabel 6000 2000 2    50   Output ~ 0
@@ -362,24 +362,23 @@ Text GLabel 6000 2900 2    50   Output ~ 0
 CK+
 Text GLabel 6000 3000 2    50   Output ~ 0
 CK-
-Text GLabel 7500 1700 0    50   Input ~ 0
+Text GLabel 7700 1600 0    50   Input ~ 0
 CK-
-Text GLabel 7500 1800 0    50   Input ~ 0
+Text GLabel 7700 1700 0    50   Input ~ 0
 CK+
-Text GLabel 8600 1700 2    50   Input ~ 0
+Text GLabel 8800 1600 2    50   Input ~ 0
 CK-
-Text GLabel 8600 1800 2    50   Input ~ 0
+Text GLabel 8800 1700 2    50   Input ~ 0
 CK+
-Text GLabel 7500 2000 0    50   Input ~ 0
+Text GLabel 7700 1900 0    50   Input ~ 0
 D0-
-Text GLabel 7500 2100 0    50   Input ~ 0
+Text GLabel 7700 2000 0    50   Input ~ 0
 D0+
-Text GLabel 8600 2000 2    50   Input ~ 0
+Text GLabel 8800 1900 2    50   Input ~ 0
 D0-
-Text GLabel 8600 2100 2    50   Input ~ 0
+Text GLabel 8800 2000 2    50   Input ~ 0
 D0+
-NoConn ~ 7500 1900
-Text GLabel 8600 1900 2    50   Input ~ 0
+Text GLabel 8800 1800 2    50   Input ~ 0
 GND
 Text GLabel 9700 2250 0    50   Input ~ 0
 CK-
@@ -392,33 +391,32 @@ D0+
 $Comp
 L BeamBender:D5V0F4U10MR-13 D2
 U 1 1 652A2640
-P 8050 2800
-F 0 "D2" H 8050 3265 50  0000 C CNN
-F 1 "D5V0F4U10MR-13" H 8050 3174 50  0000 C CNN
-F 2 "BeamBender:SOP50P490X110-10N" H 8450 3100 50  0001 L CNN
-F 3 "" H 8450 3000 50  0001 L CNN
-	1    8050 2800
+P 8250 2800
+F 0 "D2" H 8250 2800 50  0000 C CNN
+F 1 "D5V0F4U10MR-13" H 8250 3174 50  0000 C CNN
+F 2 "BeamBender:SOP50P490X110-10N" H 8650 3100 50  0001 L CNN
+F 3 "" H 8650 3000 50  0001 L CNN
+	1    8250 2800
 	1    0    0    -1  
 $EndComp
-Text GLabel 7500 2600 0    50   Input ~ 0
+Text GLabel 7700 2600 0    50   Input ~ 0
 D1-
-Text GLabel 7500 2700 0    50   Input ~ 0
+Text GLabel 7700 2700 0    50   Input ~ 0
 D1+
-Text GLabel 7500 2900 0    50   Input ~ 0
+Text GLabel 7700 2900 0    50   Input ~ 0
 D2-
-Text GLabel 7500 3000 0    50   Input ~ 0
+Text GLabel 7700 3000 0    50   Input ~ 0
 D2+
-Text GLabel 8600 2600 2    50   Input ~ 0
+Text GLabel 8800 2600 2    50   Input ~ 0
 D1-
-Text GLabel 8600 2700 2    50   Input ~ 0
+Text GLabel 8800 2700 2    50   Input ~ 0
 D1+
-Text GLabel 8600 2900 2    50   Input ~ 0
+Text GLabel 8800 2900 2    50   Input ~ 0
 D2-
-Text GLabel 8600 3000 2    50   Input ~ 0
+Text GLabel 8800 3000 2    50   Input ~ 0
 D2+
-Text GLabel 8600 2800 2    50   Input ~ 0
+Text GLabel 8800 2800 2    50   Input ~ 0
 GND
-NoConn ~ 7500 2800
 Text GLabel 9700 1850 0    50   Input ~ 0
 D1-
 Text GLabel 9700 1750 0    50   Input ~ 0
@@ -430,19 +428,19 @@ D2+
 $Comp
 L BeamBender:D5V0F4U10MR-13 D3
 U 1 1 652AB064
-P 8050 3700
-F 0 "D3" H 8050 4165 50  0000 C CNN
-F 1 "D5V0F4U10MR-13" H 8050 4074 50  0000 C CNN
-F 2 "BeamBender:SOP50P490X110-10N" H 8450 4000 50  0001 L CNN
-F 3 "" H 8450 3900 50  0001 L CNN
-	1    8050 3700
+P 8250 3700
+F 0 "D3" H 8250 4165 50  0000 C CNN
+F 1 "D5V0F4U10MR-13" H 8250 4074 50  0000 C CNN
+F 2 "BeamBender:SOP50P490X110-10N" H 8650 4000 50  0001 L CNN
+F 3 "" H 8650 3900 50  0001 L CNN
+	1    8250 3700
 	1    0    0    -1  
 $EndComp
 Text GLabel 9700 3050 0    50   Output ~ 0
 HPD
-Text GLabel 7500 3800 0    50   Output ~ 0
+Text GLabel 7700 3600 0    50   Output ~ 0
 HPD
-Text GLabel 8600 3800 2    50   Input ~ 0
+Text GLabel 8800 3600 2    50   Input ~ 0
 HPD
 Text GLabel 3700 5700 0    50   Input ~ 0
 HPD
@@ -517,17 +515,16 @@ Text GLabel 6650 1800 2    50   BiDi ~ 0
 DDC_SDA
 Text GLabel 9700 2750 0    50   BiDi ~ 0
 DDC_SDA
-Text GLabel 7500 3500 0    50   Input ~ 0
+Text GLabel 7700 3900 0    50   Input ~ 0
 DDC_SCL
-Text GLabel 8600 3500 2    50   Input ~ 0
+Text GLabel 8800 3900 2    50   Input ~ 0
 DDC_SCL
-Text GLabel 7500 3600 0    50   BiDi ~ 0
+Text GLabel 7700 3800 0    50   BiDi ~ 0
 DDC_SDA
-Text GLabel 8600 3600 2    50   BiDi ~ 0
+Text GLabel 8800 3800 2    50   BiDi ~ 0
 DDC_SDA
-Text GLabel 8600 3700 2    50   Input ~ 0
+Text GLabel 8800 3700 2    50   Input ~ 0
 GND
-NoConn ~ 7500 3700
 $Comp
 L Device:R_Small R2
 U 1 1 6532BC2D
@@ -645,7 +642,7 @@ Connection ~ 10200 3500
 Wire Wire Line
 	10200 3500 10300 3500
 NoConn ~ 9700 2950
-Text GLabel 6400 900  2    50   Input ~ 0
+Text GLabel 6750 900  2    50   Input ~ 0
 AVDD
 Wire Wire Line
 	6000 900  6200 900 
@@ -653,7 +650,7 @@ $Comp
 L Device:C_Small C6
 U 1 1 653C1DFE
 P 6200 800
-F 0 "C6" H 6292 800 50  0000 L CNN
+F 0 "C6" H 6000 900 50  0000 L CNN
 F 1 "C_Small" H 6292 755 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6200 800 50  0001 C CNN
 F 3 "~" H 6200 800 50  0001 C CNN
@@ -661,8 +658,116 @@ F 3 "~" H 6200 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6200 900 
-Wire Wire Line
-	6200 900  6400 900 
 Text GLabel 6200 700  1    50   Input ~ 0
 GND
+Wire Wire Line
+	6200 900  6350 900 
+$Comp
+L Device:C_Small C7
+U 1 1 653F698E
+P 6350 800
+F 0 "C7" H 6400 900 50  0000 L CNN
+F 1 "C_Small" H 6442 755 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6350 800 50  0001 C CNN
+F 3 "~" H 6350 800 50  0001 C CNN
+	1    6350 800 
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 900 
+Wire Wire Line
+	6350 900  6750 900 
+Wire Wire Line
+	6200 700  6350 700 
+Text GLabel 7200 3850 0    50   Input ~ 0
+VCC
+NoConn ~ 7700 3500
+NoConn ~ 8800 3500
+Wire Wire Line
+	7700 2800 7350 2800
+$Comp
+L Device:C_Small C9
+U 1 1 65476445
+P 7350 2700
+F 0 "C9" H 7150 2700 50  0000 L CNN
+F 1 "0.1uF" H 7442 2655 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7350 2700 50  0001 C CNN
+F 3 "~" H 7350 2700 50  0001 C CNN
+	1    7350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 6547758E
+P 7350 1900
+F 0 "C8" H 7150 1900 50  0000 L CNN
+F 1 "0.1uF" H 7442 1855 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7350 1900 50  0001 C CNN
+F 3 "~" H 7350 1900 50  0001 C CNN
+	1    7350 1900
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7100 1150 9250 1150
+Text Notes 7650 1300 0    100  ~ 0
+ESD Protection
+Wire Wire Line
+	7700 1800 7350 1800
+$Comp
+L Device:C_Small C10
+U 1 1 6548D3D3
+P 7350 3600
+F 0 "C10" H 7100 3600 50  0000 L CNN
+F 1 "0.1uF" H 7442 3555 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7350 3600 50  0001 C CNN
+F 3 "~" H 7350 3600 50  0001 C CNN
+	1    7350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3700 7350 3700
+Connection ~ 7350 3700
+Wire Wire Line
+	7350 3700 7700 3700
+Text GLabel 7350 2350 0    50   Input ~ 0
+GND
+Text GLabel 7350 3500 1    50   Input ~ 0
+GND
+Wire Wire Line
+	7350 2000 7350 2200
+Text Notes 7400 2300 0    50   ~ 0
+ESD bypass, \nThis limits any momentary voltage surge \nat the IO pin during the ESD strike event.
+Wire Wire Line
+	7350 2200 7400 2200
+Connection ~ 7350 2200
+Wire Wire Line
+	7350 2200 7350 2600
+Text Notes 7150 4200 0    50   ~ 0
+Central ESD clamp connected to VCC to \nalso provide protection for the VCC-line.
+Wire Notes Line
+	7100 4350 9250 4350
+Wire Notes Line
+	9250 1150 9250 4350
+Wire Notes Line
+	7100 1150 7100 4350
+Wire Wire Line
+	7200 3700 7200 4000
+Text Label 7350 2800 2    50   ~ 0
+Vp_D2
+Text Label 7350 1800 2    50   ~ 0
+Vp_D1
+$Comp
+L Device:C_Small C11
+U 1 1 654A833A
+P 10100 1000
+F 0 "C11" H 9850 1000 50  0000 L CNN
+F 1 "0.1uF" H 10192 955 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10100 1000 50  0001 C CNN
+F 3 "~" H 10100 1000 50  0001 C CNN
+	1    10100 1000
+	1    0    0    -1  
+$EndComp
+Text GLabel 10100 900  1    50   Input ~ 0
+GND
+Wire Wire Line
+	10100 1100 10100 1250
 $EndSCHEMATC
