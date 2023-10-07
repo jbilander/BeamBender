@@ -230,7 +230,7 @@ F 3 "https://en.wikipedia.org/wiki/HDMI" H 10125 2350 50  0001 C CNN
 	1    10100 2350
 	1    0    0    -1  
 $EndComp
-Text GLabel 10100 1150 2    50   Input ~ 0
+Text GLabel 10650 1100 2    50   Input ~ 0
 VCC
 Text GLabel 1150 2400 0    50   Input ~ 0
 C14M_3V3
@@ -651,7 +651,7 @@ L Device:C_Small C6
 U 1 1 653C1DFE
 P 6200 800
 F 0 "C6" H 6000 900 50  0000 L CNN
-F 1 "C_Small" H 6292 755 50  0001 L CNN
+F 1 "0.1uF" H 5900 800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6200 800 50  0001 C CNN
 F 3 "~" H 6200 800 50  0001 C CNN
 	1    6200 800 
@@ -667,7 +667,7 @@ L Device:C_Small C7
 U 1 1 653F698E
 P 6350 800
 F 0 "C7" H 6400 900 50  0000 L CNN
-F 1 "C_Small" H 6442 755 50  0001 L CNN
+F 1 "0.1uF" H 6450 800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 6350 800 50  0001 C CNN
 F 3 "~" H 6350 800 50  0001 C CNN
 	1    6350 800 
@@ -732,15 +732,8 @@ Text GLabel 7350 2350 0    50   Input ~ 0
 GND
 Text GLabel 7350 3500 1    50   Input ~ 0
 GND
-Wire Wire Line
-	7350 2000 7350 2200
 Text Notes 7400 2300 0    50   ~ 0
 ESD bypass, \nThis limits any momentary voltage surge \nat the IO pin during the ESD strike event.
-Wire Wire Line
-	7350 2200 7400 2200
-Connection ~ 7350 2200
-Wire Wire Line
-	7350 2200 7350 2600
 Text Notes 7150 4200 0    50   ~ 0
 Central ESD clamp connected to VCC to \nalso provide protection for the VCC-line.
 Wire Notes Line
@@ -749,8 +742,6 @@ Wire Notes Line
 	9250 1150 9250 4350
 Wire Notes Line
 	7100 1150 7100 4350
-Wire Wire Line
-	7200 3700 7200 4000
 Text Label 7350 2800 2    50   ~ 0
 Vp_D2
 Text Label 7350 1800 2    50   ~ 0
@@ -759,15 +750,41 @@ $Comp
 L Device:C_Small C11
 U 1 1 654A833A
 P 10100 1000
-F 0 "C11" H 9850 1000 50  0000 L CNN
-F 1 "0.1uF" H 10192 955 50  0001 L CNN
+F 0 "C11" H 9850 1100 50  0000 L CNN
+F 1 "0.1uF" H 9800 1000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 10100 1000 50  0001 C CNN
 F 3 "~" H 10100 1000 50  0001 C CNN
 	1    10100 1000
 	1    0    0    -1  
 $EndComp
-Text GLabel 10100 900  1    50   Input ~ 0
+Text GLabel 10100 800  1    50   Input ~ 0
 GND
 Wire Wire Line
 	10100 1100 10100 1250
+Wire Wire Line
+	10100 800  10100 900 
+Wire Wire Line
+	10100 900  10300 900 
+Connection ~ 10100 900 
+Connection ~ 10100 1100
+Wire Wire Line
+	7200 3700 7200 3850
+Wire Wire Line
+	7350 2000 7350 2600
+$Comp
+L Device:C_Small C12
+U 1 1 654D36E6
+P 10300 1000
+F 0 "C12" H 10392 1046 50  0000 L CNN
+F 1 "10uF" H 10392 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 10300 1000 50  0001 C CNN
+F 3 "~" H 10300 1000 50  0001 C CNN
+	1    10300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 1100 10300 1100
+Connection ~ 10300 1100
+Wire Wire Line
+	10300 1100 10650 1100
 $EndSCHEMATC
