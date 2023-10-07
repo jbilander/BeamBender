@@ -787,4 +787,19 @@ Wire Wire Line
 Connection ~ 10300 1100
 Wire Wire Line
 	10300 1100 10650 1100
+$Comp
+L BeamBender:Phoenix_Contact J?
+U 1 1 654E9506
+P 2350 1850
+F 0 "J?" H 2578 1896 50  0000 L CNN
+F 1 "Phoenix_Contact" H 2578 1805 50  0000 L CNN
+F 2 "BeamBender:Phoenix_Contact" H 2600 2000 50  0001 L CNN
+F 3 "" H 2600 1900 50  0001 L CNN
+	1    2350 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1950 1800 0    50   Input ~ 0
+VCC
+Text GLabel 1950 1900 0    50   Input ~ 0
+GND
 $EndSCHEMATC

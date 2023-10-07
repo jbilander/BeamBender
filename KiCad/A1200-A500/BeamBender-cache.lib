@@ -190,6 +190,20 @@ X Tab 4 300 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# BeamBender_Phoenix_Contact
+#
+DEF BeamBender_Phoenix_Contact J 0 30 Y Y 1 F N
+F0 "J" 0 0 50 H V L CNN
+F1 "BeamBender_Phoenix_Contact" -300 250 50 H V L CNN
+F2 "" 250 150 50 H I L CNN
+F3 "" 250 50 50 H I L CNN
+DRAW
+P 5 0 1 6 -200 150 200 150 200 -150 -200 -150 -200 150 f
+X 1 1 -400 50 200 R 50 50 0 0 W
+X 2 2 -400 -50 200 R 50 50 0 0 W
+ENDDRAW
+ENDDEF
+#
 # BeamBender_STX-3501-3N
 #
 DEF BeamBender_STX-3501-3N J 0 40 Y Y 1 L N
