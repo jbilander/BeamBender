@@ -117,7 +117,7 @@ F 3 "~" H 3750 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 1150 3450 1150
+	3150 1150 3300 1150
 Connection ~ 3450 1150
 Wire Wire Line
 	3450 1150 3750 1150
@@ -185,7 +185,7 @@ F 3 "~" H 2850 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 1150 3150 1150
+	2850 1150 3000 1150
 Connection ~ 3150 800 
 Wire Wire Line
 	2850 950  2850 800 
@@ -788,10 +788,10 @@ Connection ~ 10300 1100
 Wire Wire Line
 	10300 1100 10650 1100
 $Comp
-L BeamBender:Phoenix_Contact J?
+L BeamBender:Phoenix_Contact J4
 U 1 1 654E9506
 P 2350 1850
-F 0 "J?" H 2578 1896 50  0000 L CNN
+F 0 "J4" H 2578 1896 50  0000 L CNN
 F 1 "Phoenix_Contact" H 2578 1805 50  0000 L CNN
 F 2 "BeamBender:Phoenix_Contact" H 2600 2000 50  0001 L CNN
 F 3 "" H 2600 1900 50  0001 L CNN
@@ -802,4 +802,38 @@ Text GLabel 1950 1800 0    50   Input ~ 0
 VCC
 Text GLabel 1950 1900 0    50   Input ~ 0
 GND
+$Comp
+L Device:CP C13
+U 1 1 65230529
+P 3000 1300
+F 0 "C13" H 2750 1300 50  0000 L CNN
+F 1 "100uF" H 2750 1200 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 3038 1150 50  0001 C CNN
+F 3 "~" H 3000 1300 50  0001 C CNN
+	1    3000 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 1150
+Wire Wire Line
+	3000 1150 3150 1150
+Wire Wire Line
+	2450 1450 3000 1450
+Connection ~ 2450 1450
+$Comp
+L Device:CP C14
+U 1 1 65238B23
+P 3300 1300
+F 0 "C14" H 3400 1300 50  0000 L CNN
+F 1 "22uF" H 3350 1200 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.8" H 3338 1150 50  0001 C CNN
+F 3 "~" H 3300 1300 50  0001 C CNN
+	1    3300 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 1150
+Wire Wire Line
+	3300 1150 3450 1150
+Wire Wire Line
+	3000 1450 3300 1450
+Connection ~ 3000 1450
 $EndSCHEMATC
