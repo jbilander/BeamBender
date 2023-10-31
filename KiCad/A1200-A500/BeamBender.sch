@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -836,4 +836,10 @@ Wire Wire Line
 Wire Wire Line
 	3000 1450 3300 1450
 Connection ~ 3000 1450
+$Sheet
+S 2350 2900 1000 550 
+U 6541C824
+F0 "BeamBender_FPGA" 50
+F1 "BeamBender_FPGA.sch" 50
+$EndSheet
 $EndSCHEMATC
