@@ -17,8 +17,8 @@ $Comp
 L BeamBender:GW1NR-UV9LQ144P U2
 U 1 1 65457DDB
 P 4050 3700
-F 0 "U2" H 1557 3753 60  0000 R CNN
-F 1 "GW1NR-UV9LQ144P" H 1557 3647 60  0000 R CNN
+F 0 "U2" H 4100 3700 60  0000 R CNN
+F 1 "GW1NR-UV9LQ144P" H 4500 3600 60  0000 R CNN
 F 2 "Package_QFP:LQFP-144_20x20mm_P0.5mm" H 4050 3800 60  0001 C CNN
 F 3 "" H 5500 4900 60  0001 C CNN
 	1    4050 3700
@@ -135,4 +135,138 @@ Wire Wire Line
 Connection ~ 3250 1050
 Wire Wire Line
 	3250 1050 3350 1050
+Text GLabel 1600 3500 0    50   Input ~ 0
+TMS
+Text GLabel 1600 3600 0    50   Input ~ 0
+TCK
+Text GLabel 1600 3700 0    50   Input ~ 0
+SCLK
+Text GLabel 1600 3800 0    50   Input ~ 0
+TDI
+Text GLabel 1600 3950 0    50   Input ~ 0
+TDO
+Text GLabel 1600 4100 0    50   Input ~ 0
+RECONFIG_N
+Text GLabel 1600 4200 0    50   Input ~ 0
+DONE
+Text GLabel 1600 4300 0    50   Input ~ 0
+READY
+Text GLabel 6500 1800 2    50   Input ~ 0
+GCLKT_1
+Text GLabel 7900 3900 2    50   Input ~ 0
+GCLKT_2
+Text GLabel 3750 6150 3    50   Input ~ 0
+GCLKT_5
+Text GLabel 1600 3000 0    50   Input ~ 0
+JTAGSEL_N
+Text GLabel 6500 3750 2    50   Input ~ 0
+CSYNC_3V3
+Text GLabel 6500 3650 2    50   Input ~ 0
+PIXELSW_3V3
+Text GLabel 6500 3250 2    50   Input ~ 0
+C14M_3V3
+Text GLabel 6500 3400 2    50   Input ~ 0
+VSYNC_3V3
+Text GLabel 6500 3550 2    50   Input ~ 0
+HSYNC_3V3
+Text GLabel 6500 3950 2    50   Input ~ 0
+C14M_3V3
+Text GLabel 8050 4950 2    50   Input ~ 0
+B0_FPGA
+Text GLabel 8050 4850 2    50   Input ~ 0
+B1_FPGA
+Text GLabel 8050 4750 2    50   Input ~ 0
+B2_FPGA
+Text GLabel 8050 4650 2    50   Input ~ 0
+B3_FPGA
+Text GLabel 8050 4550 2    50   Input ~ 0
+B4_FPGA
+Text GLabel 8050 4450 2    50   Input ~ 0
+B5_FPGA
+Text GLabel 8050 4350 2    50   Input ~ 0
+B6_FPGA
+Text GLabel 8050 4250 2    50   Input ~ 0
+B7_FPGA
+Text GLabel 8050 5850 2    50   Input ~ 0
+G0_FPGA
+Text GLabel 8050 5750 2    50   Input ~ 0
+G1_FPGA
+Text GLabel 8050 5650 2    50   Input ~ 0
+G2_FPGA
+Text GLabel 8050 5550 2    50   Input ~ 0
+G3_FPGA
+Text GLabel 8050 5450 2    50   Input ~ 0
+G4_FPGA
+Text GLabel 8050 5350 2    50   Input ~ 0
+G5_FPGA
+Text GLabel 8050 5250 2    50   Input ~ 0
+G6_FPGA
+Text GLabel 8050 5150 2    50   Input ~ 0
+G7_FPGA
+Text GLabel 7700 5500 0    50   Input ~ 0
+R0_FPGA
+Text GLabel 7700 5600 0    50   Input ~ 0
+R1_FPGA
+Text GLabel 7700 5700 0    50   Input ~ 0
+R2_FPGA
+Text GLabel 7700 5800 0    50   Input ~ 0
+R3_FPGA
+Text GLabel 7700 5900 0    50   Input ~ 0
+R4_FPGA
+Text GLabel 7700 6000 0    50   Input ~ 0
+R5_FPGA
+Text GLabel 7700 6100 0    50   Input ~ 0
+R6_FPGA
+Text GLabel 7700 6200 0    50   Input ~ 0
+R7_FPGA
+Text GLabel 5150 6150 3    50   Input ~ 0
+R0_3V3
+Text GLabel 5250 6150 3    50   Input ~ 0
+R1_3V3
+Text GLabel 5350 6150 3    50   Input ~ 0
+R2_3V3
+Text GLabel 5450 6150 3    50   Input ~ 0
+R3_3V3
+Text GLabel 6500 4650 2    50   Input ~ 0
+B0_3V3
+Text GLabel 6500 4550 2    50   Input ~ 0
+B1_3V3
+Text GLabel 6500 4450 2    50   Input ~ 0
+B2_3V3
+Text GLabel 6500 4350 2    50   Input ~ 0
+B3_3V3
+Text GLabel 6500 5250 2    50   Input ~ 0
+G3_3V3
+Text GLabel 6500 5350 2    50   Input ~ 0
+G2_3V3
+Text GLabel 6500 5450 2    50   Input ~ 0
+G1_3V3
+Text GLabel 6500 5550 2    50   Input ~ 0
+G0_3V3
+Text GLabel 6500 4250 2    50   Input ~ 0
+B4_3V3
+Text GLabel 6500 4150 2    50   Input ~ 0
+B5_3V3
+Text GLabel 6500 4050 2    50   Input ~ 0
+B6_3V3
+Text GLabel 6500 3850 2    50   Input ~ 0
+B7_3V3
+Text GLabel 6500 5150 2    50   Input ~ 0
+G4_3V3
+Text GLabel 6500 5050 2    50   Input ~ 0
+G5_3V3
+Text GLabel 6500 4950 2    50   Input ~ 0
+G6_3V3
+Text GLabel 6500 4850 2    50   Input ~ 0
+G7_3V3
+Text GLabel 5550 6150 3    50   Input ~ 0
+R4_3V3
+Text GLabel 5650 6150 3    50   Input ~ 0
+R5_3V3
+Text GLabel 6500 5750 2    50   Input ~ 0
+R6_3V3
+Text GLabel 6500 5650 2    50   Input ~ 0
+R7_3V3
+Text GLabel 3950 6150 3    50   Input ~ 0
+XTAL_27M
 $EndSCHEMATC

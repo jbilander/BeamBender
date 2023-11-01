@@ -196,8 +196,8 @@ $Comp
 L BeamBender:4-1734742-0 J1
 U 1 1 64F8C681
 P 1550 4400
-F 0 "J1" H 1780 4396 50  0000 L CNN
-F 1 "4-1734742-0" H 1780 4305 50  0000 L CNN
+F 0 "J1" H 1500 2100 50  0000 L CNN
+F 1 "4-1734742-0" H 1300 2000 50  0000 L CNN
 F 2 "BeamBender:TE_4-1734742-0" H 1550 4400 50  0001 L BNN
 F 3 "" H 1550 4400 50  0001 L BNN
 F 4 "4-1734742-0" H 1550 4400 50  0001 L BNN "Comment"
@@ -526,10 +526,10 @@ DDC_SDA
 Text GLabel 8800 3700 2    50   Input ~ 0
 GND
 $Comp
-L Device:R_Small R2
+L Device:R_Small R3
 U 1 1 6532BC2D
 P 6550 1500
-F 0 "R2" H 6600 1500 50  0000 L CNN
+F 0 "R3" H 6600 1500 50  0000 L CNN
 F 1 "2k" V 6550 1450 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6550 1500 50  0001 C CNN
 F 3 "~" H 6550 1500 50  0001 C CNN
@@ -537,10 +537,10 @@ F 3 "~" H 6550 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R1
+L Device:R_Small R2
 U 1 1 6532D8B1
 P 6450 1500
-F 0 "R1" H 6300 1500 50  0000 L CNN
+F 0 "R2" H 6300 1500 50  0000 L CNN
 F 1 "2k" V 6450 1450 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6450 1500 50  0001 C CNN
 F 3 "~" H 6450 1500 50  0001 C CNN
@@ -732,7 +732,7 @@ Text GLabel 7350 2350 0    50   Input ~ 0
 GND
 Text GLabel 7350 3500 1    50   Input ~ 0
 GND
-Text Notes 7400 2300 0    50   ~ 0
+Text Notes 7400 2350 0    50   ~ 0
 ESD bypass, \nThis limits any momentary voltage surge \nat the IO pin during the ESD strike event.
 Text Notes 7150 4200 0    50   ~ 0
 Central ESD clamp connected to VCC to \nalso provide protection for the VCC-line.
@@ -842,4 +842,60 @@ U 6541C824
 F0 "BeamBender_FPGA" 50
 F1 "BeamBender_FPGA.sch" 50
 $EndSheet
+$Comp
+L Oscillator:SG-8002CE X1
+U 1 1 654B3E8F
+P 2800 4450
+F 0 "X1" H 3100 4600 50  0000 L CNN
+F 1 "Abracon ASE-27.000MHZ-L-R-T" H 2200 4850 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm" H 3500 4100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/3/ASEseries-1774818.pdf" H 2700 4450 50  0001 C CNN
+	1    2800 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 4750 3    50   Input ~ 0
+GND
+Text GLabel 2500 4450 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	2500 4450 2500 4250
+Wire Wire Line
+	2500 4150 2800 4150
+$Comp
+L Device:C_Small C15
+U 1 1 654BAF9D
+P 2400 4250
+F 0 "C15" V 2450 4300 50  0000 L CNN
+F 1 "0.01uF" H 2492 4205 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2400 4250 50  0001 C CNN
+F 3 "~" H 2400 4250 50  0001 C CNN
+	1    2400 4250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2500 4250
+Wire Wire Line
+	2500 4250 2500 4150
+Wire Wire Line
+	2800 4750 2250 4750
+Wire Wire Line
+	2250 4750 2250 4250
+Wire Wire Line
+	2250 4250 2300 4250
+Text GLabel 3200 4750 3    50   Output ~ 0
+XTAL_27M
+$Comp
+L Device:R_Small R1
+U 1 1 65512C64
+P 3200 4550
+F 0 "R1" H 3259 4550 50  0000 L CNN
+F 1 "22" V 3200 4500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3200 4550 50  0001 C CNN
+F 3 "~" H 3200 4550 50  0001 C CNN
+	1    3200 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4450 3200 4450
+Wire Wire Line
+	3200 4650 3200 4750
 $EndSCHEMATC
