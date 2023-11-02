@@ -153,8 +153,6 @@ Text GLabel 1600 4300 0    50   Input ~ 0
 READY
 Text GLabel 6500 1800 2    50   Input ~ 0
 GCLKT_1
-Text GLabel 7900 3900 2    50   Input ~ 0
-GCLKT_2
 Text GLabel 3750 6150 3    50   Input ~ 0
 GCLKT_5
 Text GLabel 1600 3000 0    50   Input ~ 0
