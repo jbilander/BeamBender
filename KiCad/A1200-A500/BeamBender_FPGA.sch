@@ -153,7 +153,7 @@ Text GLabel 1600 4300 0    50   Input ~ 0
 READY
 Text GLabel 6500 1800 2    50   Input ~ 0
 GCLKT_1
-Text GLabel 3050 6150 3    50   Output ~ 0
+Text GLabel 1600 5400 0    50   Output ~ 0
 PCLK
 Text GLabel 1600 3000 0    50   Input ~ 0
 JTAGSEL_N
@@ -169,62 +169,54 @@ Text GLabel 6500 3550 2    50   Input ~ 0
 HSYNC_3V3
 Text GLabel 6500 3950 2    50   Input ~ 0
 C14M_3V3
-Text GLabel 8050 4950 2    50   Input ~ 0
+Text GLabel 2250 6150 3    50   Output ~ 0
 B0_FPGA
-Text GLabel 8050 4850 2    50   Input ~ 0
+Text GLabel 2350 6150 3    50   Output ~ 0
 B1_FPGA
-Text GLabel 8050 4750 2    50   Input ~ 0
+Text GLabel 2450 6150 3    50   Output ~ 0
 B2_FPGA
-Text GLabel 8050 4650 2    50   Input ~ 0
+Text GLabel 2550 6150 3    50   Output ~ 0
 B3_FPGA
-Text GLabel 8050 4550 2    50   Input ~ 0
+Text GLabel 2650 6150 3    50   Output ~ 0
 B4_FPGA
-Text GLabel 8050 4450 2    50   Input ~ 0
+Text GLabel 2750 6150 3    50   Output ~ 0
 B5_FPGA
-Text GLabel 8050 4350 2    50   Input ~ 0
+Text GLabel 2850 6150 3    50   Output ~ 0
 B6_FPGA
-Text GLabel 8050 4250 2    50   Input ~ 0
+Text GLabel 2950 6150 3    50   Output ~ 0
 B7_FPGA
-Text GLabel 2950 6150 3    50   Input ~ 0
+Text GLabel 3050 6150 3    50   Output ~ 0
 G0_FPGA
-Text GLabel 3150 6150 3    50   Input ~ 0
+Text GLabel 3150 6150 3    50   Output ~ 0
 G1_FPGA
-Text GLabel 3250 6150 3    50   Input ~ 0
+Text GLabel 3250 6150 3    50   Output ~ 0
 G2_FPGA
-Text GLabel 3350 6150 3    50   Input ~ 0
+Text GLabel 3350 6150 3    50   Output ~ 0
 G3_FPGA
-Text GLabel 3450 6150 3    50   Input ~ 0
+Text GLabel 3450 6150 3    50   Output ~ 0
 G4_FPGA
-Text GLabel 3600 6150 3    50   Input ~ 0
+Text GLabel 3600 6150 3    50   Output ~ 0
 G5_FPGA
-Text GLabel 3750 6150 3    50   Input ~ 0
+Text GLabel 3750 6150 3    50   Output ~ 0
 G6_FPGA
-Text GLabel 3850 6150 3    50   Input ~ 0
+Text GLabel 3850 6150 3    50   Output ~ 0
 G7_FPGA
-Text GLabel 4050 6150 3    50   Input ~ 0
+Text GLabel 4050 6150 3    50   Output ~ 0
 R0_FPGA
-Text GLabel 4150 6150 3    50   Input ~ 0
+Text GLabel 4150 6150 3    50   Output ~ 0
 R1_FPGA
-Text GLabel 4250 6150 3    50   Input ~ 0
+Text GLabel 4250 6150 3    50   Output ~ 0
 R2_FPGA
-Text GLabel 4350 6150 3    50   Input ~ 0
+Text GLabel 4350 6150 3    50   Output ~ 0
 R3_FPGA
-Text GLabel 4450 6150 3    50   Input ~ 0
+Text GLabel 4450 6150 3    50   Output ~ 0
 R4_FPGA
-Text GLabel 4550 6150 3    50   Input ~ 0
+Text GLabel 4550 6150 3    50   Output ~ 0
 R5_FPGA
-Text GLabel 4650 6150 3    50   Input ~ 0
+Text GLabel 4650 6150 3    50   Output ~ 0
 R6_FPGA
-Text GLabel 4750 6150 3    50   Input ~ 0
+Text GLabel 4750 6150 3    50   Output ~ 0
 R7_FPGA
-Text GLabel 5150 6150 3    50   Input ~ 0
-R0_3V3
-Text GLabel 5250 6150 3    50   Input ~ 0
-R1_3V3
-Text GLabel 5350 6150 3    50   Input ~ 0
-R2_3V3
-Text GLabel 5450 6150 3    50   Input ~ 0
-R3_3V3
 Text GLabel 6500 4650 2    50   Input ~ 0
 B0_3V3
 Text GLabel 6500 4550 2    50   Input ~ 0
@@ -257,20 +249,34 @@ Text GLabel 6500 4950 2    50   Input ~ 0
 G6_3V3
 Text GLabel 6500 4850 2    50   Input ~ 0
 G7_3V3
-Text GLabel 5550 6150 3    50   Input ~ 0
-R4_3V3
-Text GLabel 5650 6150 3    50   Input ~ 0
-R5_3V3
-Text GLabel 6500 5750 2    50   Input ~ 0
-R6_3V3
 Text GLabel 6500 5650 2    50   Input ~ 0
 R7_3V3
 Text GLabel 3950 6150 3    50   Input ~ 0
 XTAL_27M
-Text GLabel 4950 6150 3    50   Input ~ 0
+Text GLabel 4950 6150 3    50   Output ~ 0
 SCL_I2C
 Text GLabel 4850 6150 3    50   BiDi ~ 0
 SDA_I2C
 Text GLabel 5050 6150 3    50   Input ~ 0
 INT
+Text GLabel 2150 6150 3    50   Output ~ 0
+DE
+Text GLabel 1600 5250 0    50   Output ~ 0
+VSYNC_FPGA
+Text GLabel 2050 6150 3    50   Output ~ 0
+HSYNC_FPGA
+Text GLabel 6500 5750 2    50   Input ~ 0
+R6_3V3
+Text GLabel 5650 6150 3    50   Input ~ 0
+R5_3V3
+Text GLabel 5550 6150 3    50   Input ~ 0
+R4_3V3
+Text GLabel 5450 6150 3    50   Input ~ 0
+R3_3V3
+Text GLabel 5350 6150 3    50   Input ~ 0
+R2_3V3
+Text GLabel 5250 6150 3    50   Input ~ 0
+R1_3V3
+Text GLabel 5150 6150 3    50   Input ~ 0
+R0_3V3
 $EndSCHEMATC
