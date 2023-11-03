@@ -151,9 +151,7 @@ Text GLabel 1600 4200 0    50   Input ~ 0
 DONE
 Text GLabel 1600 4300 0    50   Input ~ 0
 READY
-Text GLabel 6500 1800 2    50   Input ~ 0
-GCLKT_1
-Text GLabel 1600 5400 0    50   Output ~ 0
+Text GLabel 1100 5400 0    50   Output ~ 0
 PCLK
 Text GLabel 1600 3000 0    50   Input ~ 0
 JTAGSEL_N
@@ -279,4 +277,23 @@ Text GLabel 5250 6150 3    50   Input ~ 0
 R1_3V3
 Text GLabel 5150 6150 3    50   Input ~ 0
 R0_3V3
+Text GLabel 6500 1800 2    50   Input ~ 0
+XTAL_50M
+$Comp
+L Device:R_Small R?
+U 1 1 65968AC9
+P 1350 5400
+AR Path="/65968AC9" Ref="R?"  Part="1" 
+AR Path="/6541C824/65968AC9" Ref="R3"  Part="1" 
+F 0 "R3" V 1450 5350 50  0000 L CNN
+F 1 "22" V 1350 5350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1350 5400 50  0001 C CNN
+F 3 "~" H 1350 5400 50  0001 C CNN
+	1    1350 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 5400 1450 5400
+Wire Wire Line
+	1250 5400 1100 5400
 $EndSCHEMATC
