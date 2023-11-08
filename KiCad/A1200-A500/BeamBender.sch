@@ -684,17 +684,17 @@ Connection ~ 10300 1100
 $Comp
 L BeamBender:Phoenix_Contact J4
 U 1 1 654E9506
-P 2350 1850
-F 0 "J4" H 2578 1896 50  0000 L CNN
-F 1 "Phoenix_Contact" H 2578 1805 50  0000 L CNN
-F 2 "BeamBender:Phoenix_Contact" H 2600 2000 50  0001 L CNN
-F 3 "" H 2600 1900 50  0001 L CNN
-	1    2350 1850
+P 1150 1850
+F 0 "J4" H 1378 1896 50  0000 L CNN
+F 1 "Phoenix_Contact" H 800 2100 50  0000 L CNN
+F 2 "BeamBender:Phoenix_Contact" H 1400 2000 50  0001 L CNN
+F 3 "" H 1400 1900 50  0001 L CNN
+	1    1150 1850
 	1    0    0    -1  
 $EndComp
-Text GLabel 1950 1800 0    50   Input ~ 0
+Text GLabel 750  1800 0    50   Input ~ 0
 VCC
-Text GLabel 1950 1900 0    50   Input ~ 0
+Text GLabel 750  1900 0    50   Input ~ 0
 GND
 $Comp
 L Device:CP C13
@@ -1111,10 +1111,10 @@ Wire Wire Line
 Text GLabel 6750 900  2    50   Input ~ 0
 AVDD
 $Comp
-L Device:C_Small C12
+L Device:C_Small C30
 U 1 1 657943FC
 P 7900 5050
-F 0 "C12" H 7700 5150 50  0000 L CNN
+F 0 "C30" H 7700 5150 50  0000 L CNN
 F 1 "10uF (1206)" H 7700 4950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7900 5050 50  0001 C CNN
 F 3 "~" H 7900 5050 50  0001 C CNN
@@ -1162,7 +1162,7 @@ L Device:C_Small C24
 U 1 1 6584F5FE
 P 4250 7500
 F 0 "C24" H 4100 7550 50  0000 L CNN
-F 1 "0.1uF" H 4100 7650 50  0000 L CNN
+F 1 "0.01uF" H 4100 7650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4250 7500 50  0001 C CNN
 F 3 "~" H 4250 7500 50  0001 C CNN
 	1    4250 7500
@@ -1225,10 +1225,10 @@ Wire Wire Line
 Wire Wire Line
 	2300 4650 2350 4650
 $Comp
-L Device:C_Small C26
+L Device:C_Small C12
 U 1 1 6591CDE3
 P 3450 7500
-F 0 "C26" H 3542 7546 50  0000 L CNN
+F 0 "C12" H 3542 7546 50  0000 L CNN
 F 1 "0.1uF" H 3500 7650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3450 7500 50  0001 C CNN
 F 3 "~" H 3450 7500 50  0001 C CNN
@@ -1244,13 +1244,64 @@ Wire Notes Line
 Wire Notes Line
 	750  7750 3950 7750
 Wire Wire Line
-	3450 7400 4250 7400
+	3450 7400 3750 7400
 Wire Wire Line
-	3450 7600 4250 7600
+	3450 7600 3750 7600
 Wire Notes Line
 	4050 7100 4050 7750
 Wire Notes Line
 	4050 7750 6850 7750
 Wire Notes Line
 	6850 7100 4050 7100
+$Comp
+L Device:C_Small C26
+U 1 1 659AF7E7
+P 3750 7500
+F 0 "C26" H 3842 7546 50  0000 L CNN
+F 1 "0.1uF" H 3800 7650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3750 7500 50  0001 C CNN
+F 3 "~" H 3750 7500 50  0001 C CNN
+	1    3750 7500
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 7400
+Wire Wire Line
+	3750 7400 4250 7400
+Connection ~ 3750 7600
+Wire Wire Line
+	3750 7600 4250 7600
+$Comp
+L Device:C_Small C27
+U 1 1 659B84AB
+P 4550 7500
+F 0 "C27" H 4400 7550 50  0000 L CNN
+F 1 "0.01uF" H 4400 7650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 4550 7500 50  0001 C CNN
+F 3 "~" H 4550 7500 50  0001 C CNN
+	1    4550 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 7400 4550 7400
+Connection ~ 4250 7400
+Wire Wire Line
+	4250 7600 4550 7600
+Connection ~ 4250 7600
+$Comp
+L BeamBender:MCP1702T-1802E_CB U4
+U 1 1 659F5664
+P 2450 1900
+F 0 "U4" H 2450 2215 50  0000 C CNN
+F 1 "MCP1702T-1802E_CB" H 2450 2124 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 2850 2050 50  0001 L CNN
+F 3 "" H 2850 1950 50  0001 L CNN
+	1    2450 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 1850 2    50   Input ~ 0
+3V3
+Text GLabel 1900 1850 0    50   Input ~ 0
+GND
+Text GLabel 1900 1950 0    50   Output ~ 0
+1V8
 $EndSCHEMATC

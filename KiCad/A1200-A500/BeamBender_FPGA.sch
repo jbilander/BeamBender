@@ -296,4 +296,6 @@ Wire Wire Line
 	1600 5400 1450 5400
 Wire Wire Line
 	1250 5400 1100 5400
+Text Label 1550 5400 3    50   ~ 0
+Pixel_CLK
 $EndSCHEMATC
