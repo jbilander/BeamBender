@@ -1121,7 +1121,7 @@ F 3 "~" H 8650 5050 50  0001 C CNN
 	1    8650 5050
 	1    0    0    -1  
 $EndComp
-Text GLabel 8800 4900 1    50   Input ~ 0
+Text GLabel 10050 4900 2    50   Output ~ 0
 DVDD
 $Comp
 L Device:C_Small C23
@@ -1139,8 +1139,6 @@ Wire Wire Line
 Text GLabel 8650 5200 3    50   Input ~ 0
 GND
 Connection ~ 9050 4900
-Wire Wire Line
-	9050 4900 9300 4900
 Wire Wire Line
 	8650 5200 9050 5200
 Text GLabel 4400 2600 0    50   Input ~ 0
@@ -1404,4 +1402,64 @@ Wire Wire Line
 	7350 5250 7350 5200
 Wire Wire Line
 	7350 4950 7750 4950
+Connection ~ 8650 4900
+Text GLabel 8650 4650 1    50   Input ~ 0
+1V8
+$Comp
+L Device:L_Small L2
+U 1 1 65D34DF4
+P 8650 4750
+F 0 "L2" H 8698 4796 50  0000 L CNN
+F 1 "10uH" H 8698 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8650 4750 50  0001 C CNN
+F 3 "~" H 8650 4750 50  0001 C CNN
+	1    8650 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4900 8650 4850
+Wire Wire Line
+	9050 4900 9350 4900
+$Comp
+L Device:C_Small C33
+U 1 1 65D62DDA
+P 9350 5050
+F 0 "C33" H 9200 5150 50  0000 L CNN
+F 1 "0.1uF (0603)" H 9100 4950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9350 5050 50  0001 C CNN
+F 3 "~" H 9350 5050 50  0001 C CNN
+	1    9350 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5200 9350 5200
+Wire Wire Line
+	9350 5200 9350 5150
+Connection ~ 9050 5200
+Wire Wire Line
+	9350 4950 9350 4900
+Connection ~ 9350 4900
+$Comp
+L Device:C_Small C34
+U 1 1 65D92B02
+P 9650 5050
+F 0 "C34" H 9500 5150 50  0000 L CNN
+F 1 "0.1uF (0603)" H 9500 5250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 9650 5050 50  0001 C CNN
+F 3 "~" H 9650 5050 50  0001 C CNN
+	1    9650 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 4900 9650 4900
+Wire Wire Line
+	9650 4950 9650 4900
+Connection ~ 9650 4900
+Wire Wire Line
+	9650 4900 10050 4900
+Wire Wire Line
+	9650 5150 9650 5200
+Wire Wire Line
+	9650 5200 9350 5200
+Connection ~ 9350 5200
 $EndSCHEMATC
