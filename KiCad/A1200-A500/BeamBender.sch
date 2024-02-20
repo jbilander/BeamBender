@@ -850,14 +850,9 @@ Wire Wire Line
 Wire Wire Line
 	4400 5700 3850 5700
 Wire Wire Line
-	4100 6000 4100 6100
-Connection ~ 3850 6100
-Wire Wire Line
 	3700 6100 3850 6100
 Wire Wire Line
 	3850 6100 3850 6000
-Wire Wire Line
-	4100 6100 3850 6100
 Text Label 4100 5800 0    50   ~ 0
 PD
 Wire Wire Line
@@ -1660,4 +1655,17 @@ Wire Wire Line
 Wire Wire Line
 	8000 5200 8000 5150
 Connection ~ 7700 5200
+Text GLabel 4100 6000 3    50   Input ~ 0
+AVDD
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 6604994A
+P 6250 3450
+F 0 "J5" H 6330 3492 50  0000 L CNN
+F 1 "Conn_01x01" H 6330 3401 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 6250 3450 50  0001 C CNN
+F 3 "~" H 6250 3450 50  0001 C CNN
+	1    6250 3450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
