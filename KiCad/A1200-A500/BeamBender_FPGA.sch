@@ -139,8 +139,6 @@ Text GLabel 1600 3500 0    50   Input ~ 0
 TMS
 Text GLabel 1600 3600 0    50   Input ~ 0
 TCK
-Text GLabel 1600 3700 0    50   Input ~ 0
-SCLK
 Text GLabel 1600 3800 0    50   Input ~ 0
 TDI
 Text GLabel 1600 3950 0    50   Input ~ 0
@@ -153,8 +151,6 @@ Text GLabel 1600 4300 0    50   Input ~ 0
 READY
 Text GLabel 1100 5400 0    50   Output ~ 0
 PCLK
-Text GLabel 1600 3000 0    50   Input ~ 0
-JTAGSEL_N
 Text GLabel 6500 3750 2    50   Input ~ 0
 CSYNC_3V3
 Text GLabel 6500 3650 2    50   Input ~ 0
@@ -298,4 +294,63 @@ Wire Wire Line
 	1250 5400 1100 5400
 Text Label 1550 5400 3    50   ~ 0
 Pixel_CLK
+Text GLabel 3600 1250 1    50   Input ~ 0
+MODE0
+Text GLabel 3700 1250 1    50   Input ~ 0
+MODE1
+Text GLabel 1600 3100 0    50   Input ~ 0
+GND
+Text GLabel 1600 3400 0    50   Input ~ 0
+GND
+Text GLabel 1600 3700 0    50   Input ~ 0
+GND
+Text GLabel 1600 4400 0    50   Input ~ 0
+GND
+Text GLabel 1600 3000 0    50   Input ~ 0
+GND
+NoConn ~ 1600 2550
+NoConn ~ 1600 2650
+NoConn ~ 1600 2800
+NoConn ~ 1600 2900
+NoConn ~ 1600 3200
+NoConn ~ 1600 3300
+NoConn ~ 1600 4500
+NoConn ~ 1600 4600
+NoConn ~ 1600 4700
+NoConn ~ 1600 4800
+NoConn ~ 1600 4900
+NoConn ~ 1600 5000
+NoConn ~ 1600 5100
+NoConn ~ 6500 1700
+NoConn ~ 6500 2000
+NoConn ~ 6500 2100
+NoConn ~ 6500 2200
+NoConn ~ 6500 2300
+NoConn ~ 6500 2400
+NoConn ~ 6500 2500
+NoConn ~ 6500 2600
+NoConn ~ 6500 2700
+NoConn ~ 6500 2800
+NoConn ~ 6500 2900
+NoConn ~ 6500 3000
+NoConn ~ 6500 3100
+NoConn ~ 3800 1250
+NoConn ~ 3900 1250
+NoConn ~ 4000 1250
+NoConn ~ 4100 1250
+NoConn ~ 4200 1250
+NoConn ~ 4300 1250
+NoConn ~ 4400 1250
+NoConn ~ 4500 1250
+NoConn ~ 4600 1250
+NoConn ~ 4700 1250
+NoConn ~ 4800 1250
+NoConn ~ 4900 1250
+NoConn ~ 5000 1250
+NoConn ~ 5100 1250
+NoConn ~ 5200 1250
+NoConn ~ 5300 1250
+NoConn ~ 5400 1250
+Text GLabel 6500 1900 2    50   Input ~ 0
+GND
 $EndSCHEMATC
