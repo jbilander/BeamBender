@@ -294,9 +294,9 @@ Wire Wire Line
 	1250 5400 1100 5400
 Text Label 1550 5400 3    50   ~ 0
 Pixel_CLK
-Text GLabel 3600 1250 1    50   Input ~ 0
+Text GLabel 3600 650  0    50   Input ~ 0
 MODE0
-Text GLabel 3700 1250 1    50   Input ~ 0
+Text GLabel 3700 1000 2    50   Input ~ 0
 MODE1
 Text GLabel 1600 3100 0    50   Input ~ 0
 GND
@@ -352,5 +352,39 @@ NoConn ~ 5200 1250
 NoConn ~ 5300 1250
 NoConn ~ 5400 1250
 Text GLabel 6500 1900 2    50   Input ~ 0
+GND
+$Comp
+L Device:R_Small R13
+U 1 1 661C34A6
+P 3950 750
+F 0 "R13" V 4050 750 50  0000 C CNN
+F 1 "1k" V 3950 750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3950 750 50  0001 C CNN
+F 3 "~" H 3950 750 50  0001 C CNN
+	1    3950 750 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 661D4C0B
+P 3950 650
+F 0 "R12" V 3850 650 50  0000 C CNN
+F 1 "1k" V 3950 650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3950 650 50  0001 C CNN
+F 3 "~" H 3950 650 50  0001 C CNN
+	1    3950 650 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 1250 3600 650 
+Wire Wire Line
+	3600 650  3850 650 
+Wire Wire Line
+	3700 1250 3700 750 
+Wire Wire Line
+	3700 750  3850 750 
+Text GLabel 4050 650  2    50   Input ~ 0
+GND
+Text GLabel 4050 750  2    50   Input ~ 0
 GND
 $EndSCHEMATC
