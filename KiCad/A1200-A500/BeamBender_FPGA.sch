@@ -302,7 +302,7 @@ Text GLabel 1600 3100 0    50   Input ~ 0
 GND
 Text GLabel 1600 3400 0    50   Input ~ 0
 GND
-Text GLabel 1600 3300 0    50   Input ~ 0
+Text GLabel 1600 3700 0    50   Input ~ 0
 JP1
 Text GLabel 1600 4400 0    50   Input ~ 0
 GND
@@ -397,13 +397,13 @@ Text GLabel 8400 1800 1    50   Input ~ 0
 3V3
 Wire Wire Line
 	4050 650  4050 750 
-Text GLabel 8400 2200 3    50   Input ~ 0
+Text GLabel 8100 2200 3    50   Input ~ 0
 JP1
 Text GLabel 8200 2200 3    50   Input ~ 0
 TCK
 Text GLabel 8200 1800 1    50   Input ~ 0
 GND
-Text GLabel 8100 2200 3    50   Input ~ 0
+Text GLabel 8950 2200 3    50   Input ~ 0
 JP2
 Text GLabel 9250 2200 3    50   Input ~ 0
 RECONFIG_N
@@ -432,43 +432,32 @@ Wire Wire Line
 Connection ~ 9150 1800
 Wire Wire Line
 	9150 1800 9250 1800
-Text GLabel 8950 2200 3    50   Input ~ 0
-JP3
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J6
-U 1 1 6624BEF7
-P 8200 3550
-F 0 "J6" H 8250 3967 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 8250 3876 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical_SMD" H 8200 3550 50  0001 C CNN
-F 3 "~" H 8200 3550 50  0001 C CNN
-	1    8200 3550
-	1    0    0    -1  
-$EndComp
-Text GLabel 8000 3350 0    50   Output ~ 0
+Text GLabel 8400 2200 3    50   Input ~ 0
+BT1
+Text GLabel 8050 3000 0    50   Output ~ 0
 TCK
-Text GLabel 8000 3450 0    50   Output ~ 0
+Text GLabel 8050 3100 0    50   Output ~ 0
 TDI
-Text GLabel 8000 3550 0    50   Input ~ 0
+Text GLabel 8050 3200 0    50   Input ~ 0
 TDO
-Text GLabel 8000 3650 0    50   Input ~ 0
+Text GLabel 8050 3300 0    50   Input ~ 0
 GND
-Text GLabel 8000 3750 0    50   Output ~ 0
+Text GLabel 8050 3400 0    50   Output ~ 0
 TMS
-Text GLabel 8500 3350 2    50   Input ~ 0
+Text GLabel 8550 3000 2    50   Input ~ 0
 GND
-Text GLabel 8500 3750 2    50   Input ~ 0
+Text GLabel 8550 3400 2    50   Input ~ 0
 GND
-Text GLabel 8500 3550 2    50   Input ~ 0
+Text GLabel 8550 3200 2    50   Input ~ 0
 3V3
-Text GLabel 1600 3700 0    50   Input ~ 0
-JP2
 Text GLabel 1600 4500 0    50   Input ~ 0
-JP3
+JP2
+Text GLabel 1600 3300 0    50   Input ~ 0
+BT1
 NoConn ~ 1600 3200
-Text GLabel 8500 3650 2    50   Input ~ 0
+Text GLabel 8550 3300 2    50   Input ~ 0
 JP1
-Text GLabel 8500 3450 2    50   Input ~ 0
+Text GLabel 8550 3100 2    50   Input ~ 0
 JP2
 Wire Wire Line
 	8200 1800 8300 1800
@@ -476,4 +465,19 @@ Wire Wire Line
 	8200 2200 8300 2200
 Text GLabel 8100 1800 1    50   Input ~ 0
 3V3
+Text GLabel 8550 3500 2    50   Input ~ 0
+BT1
+Text GLabel 8050 3500 0    50   Input ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J6
+U 1 1 663407EE
+P 8250 3200
+F 0 "J6" H 8300 3617 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 8300 3526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 8250 3200 50  0001 C CNN
+F 3 "~" H 8250 3200 50  0001 C CNN
+	1    8250 3200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
