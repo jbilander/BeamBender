@@ -452,7 +452,7 @@ Text GLabel 8550 3200 2    50   Input ~ 0
 3V3
 Text GLabel 1600 4500 0    50   Input ~ 0
 JP2
-Text GLabel 1600 3300 0    50   Input ~ 0
+Text GLabel 750  2850 0    50   Input ~ 0
 BT1
 NoConn ~ 1600 3200
 Text GLabel 8550 3300 2    50   Input ~ 0
@@ -480,4 +480,57 @@ F 3 "~" H 8250 3200 50  0001 C CNN
 	1    8250 3200
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R14
+U 1 1 6651553B
+P 950 3300
+F 0 "R14" V 850 3300 50  0000 C CNN
+F 1 "10k" V 950 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 950 3300 50  0001 C CNN
+F 3 "~" H 950 3300 50  0001 C CNN
+	1    950  3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C45
+U 1 1 66517D93
+P 1200 3400
+F 0 "C45" H 1000 3350 50  0000 L CNN
+F 1 "100nF (0805)" H 600 3250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1200 3400 50  0001 C CNN
+F 3 "~" H 1200 3400 50  0001 C CNN
+	1    1200 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3300 1200 3300
+Connection ~ 1200 3300
+Wire Wire Line
+	1200 3300 1600 3300
+Text GLabel 1200 3500 3    50   Input ~ 0
+GND
+Wire Wire Line
+	850  3300 750  3300
+Wire Wire Line
+	750  3300 750  3050
+$Comp
+L Device:D_Small D4
+U 1 1 6651E93A
+P 950 3050
+F 0 "D4" H 950 2950 50  0000 C CNN
+F 1 "D_Small" H 900 2850 50  0001 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 950 3050 50  0001 C CNN
+F 3 "~" V 950 3050 50  0001 C CNN
+	1    950  3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	750  3050 850  3050
+Connection ~ 750  3050
+Wire Wire Line
+	750  3050 750  2850
+Wire Wire Line
+	1050 3050 1200 3050
+Wire Wire Line
+	1200 3050 1200 3300
 $EndSCHEMATC
