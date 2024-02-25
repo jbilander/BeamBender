@@ -533,4 +533,28 @@ Wire Wire Line
 	1050 3050 1200 3050
 Wire Wire Line
 	1200 3050 1200 3300
+$Comp
+L BeamBender:AK5720VT U5
+U 1 1 665688C0
+P 9200 4850
+F 0 "U5" H 9200 5465 50  0000 C CNN
+F 1 "AK5720VT" H 9200 5374 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 10350 4950 50  0001 L CNN
+F 3 "" H 10350 4850 50  0001 L CNN
+F 4 "24-bit Audio ADC" H 10350 4750 50  0001 L CNN "Description"
+	1    9200 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 8100 4800 0    50   Input ~ 0
+GND
+Text GLabel 8550 4800 0    50   Input ~ 0
+GND
+Text GLabel 9850 5200 2    50   Output ~ 0
+I2S0
+Text GLabel 9850 5000 2    50   Input ~ 0
+MCLK
+Text GLabel 9850 5100 2    50   Output ~ 0
+LRCLK
+Text GLabel 9850 4900 2    50   Output ~ 0
+BCLK
 $EndSCHEMATC
