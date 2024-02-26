@@ -161,8 +161,6 @@ Text GLabel 6500 3400 2    50   Input ~ 0
 VSYNC_3V3
 Text GLabel 6500 3550 2    50   Input ~ 0
 HSYNC_3V3
-Text GLabel 6500 3950 2    50   Input ~ 0
-C14M_3V3
 Text GLabel 2250 6150 3    50   Output ~ 0
 B0_FPGA
 Text GLabel 2350 6150 3    50   Output ~ 0
@@ -312,7 +310,6 @@ NoConn ~ 1600 2550
 NoConn ~ 1600 2650
 NoConn ~ 1600 2800
 NoConn ~ 1600 2900
-NoConn ~ 1600 4600
 NoConn ~ 1600 4700
 NoConn ~ 1600 4800
 NoConn ~ 1600 4900
@@ -536,25 +533,102 @@ Wire Wire Line
 $Comp
 L BeamBender:AK5720VT U5
 U 1 1 665688C0
-P 9200 4850
-F 0 "U5" H 9200 5465 50  0000 C CNN
-F 1 "AK5720VT" H 9200 5374 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 10350 4950 50  0001 L CNN
-F 3 "" H 10350 4850 50  0001 L CNN
-F 4 "24-bit Audio ADC" H 10350 4750 50  0001 L CNN "Description"
-	1    9200 4850
+P 9950 3650
+F 0 "U5" H 9950 4265 50  0000 C CNN
+F 1 "AK5720VT" H 9950 4174 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 11100 3750 50  0001 L CNN
+F 3 "" H 11100 3650 50  0001 L CNN
+F 4 "24-bit Audio ADC" H 11100 3550 50  0001 L CNN "Description"
+	1    9950 3650
 	1    0    0    -1  
 $EndComp
-Text GLabel 8100 4800 0    50   Input ~ 0
+Text GLabel 9050 3900 0    50   Input ~ 0
 GND
-Text GLabel 8550 4800 0    50   Input ~ 0
+Text GLabel 9300 3600 0    50   Input ~ 0
 GND
-Text GLabel 9850 5200 2    50   Output ~ 0
+Text GLabel 10600 4000 2    50   Output ~ 0
 I2S0
-Text GLabel 9850 5000 2    50   Input ~ 0
+Text GLabel 10600 3800 2    50   Input ~ 0
 MCLK
-Text GLabel 9850 5100 2    50   Output ~ 0
+Text GLabel 10600 3900 2    50   Output ~ 0
 LRCLK
-Text GLabel 9850 4900 2    50   Output ~ 0
+Text GLabel 10600 3700 2    50   Output ~ 0
 BCLK
+Text GLabel 7900 5100 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	8200 4800 7900 4800
+Wire Wire Line
+	7900 4800 7900 4900
+$Comp
+L Device:R_Small R15
+U 1 1 665DD143
+P 8600 5200
+F 0 "R15" H 8659 5200 50  0000 L CNN
+F 1 "22" V 8600 5150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 8600 5200 50  0001 C CNN
+F 3 "~" H 8600 5200 50  0001 C CNN
+	1    8600 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5300 8600 5400
+Wire Wire Line
+	8500 5100 8600 5100
+Text GLabel 8600 5400 3    50   Output ~ 0
+XTAL_24.576M
+$Comp
+L Device:C_Small C46
+U 1 1 665DD14C
+P 7800 4900
+F 0 "C46" V 7850 4950 50  0000 L CNN
+F 1 "0.01uF (0603)" V 7950 4750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7800 4900 50  0001 C CNN
+F 3 "~" H 7800 4900 50  0001 C CNN
+	1    7800 4900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7900 4900
+Wire Wire Line
+	7900 4900 7900 5100
+Text GLabel 7650 5400 3    50   Input ~ 0
+GND
+Wire Wire Line
+	8200 5400 7650 5400
+Wire Wire Line
+	7650 5400 7650 4900
+Wire Wire Line
+	7650 4900 7700 4900
+$Comp
+L Oscillator:SG-8002LB X3
+U 1 1 665EF5A4
+P 8200 5100
+F 0 "X3" H 8544 5146 50  0000 L CNN
+F 1 "5.0x3.2mm" H 8550 5250 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_TXC_7C-4Pin_5.0x3.2mm_HandSoldering" H 8900 4750 50  0001 C CNN
+F 3 "" H 8100 5100 50  0001 C CNN
+	1    8200 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 3950 2    50   Input ~ 0
+XTAL_24.576M
+Text GLabel 1000 4600 0    50   Output ~ 0
+MCLK
+$Comp
+L Device:R_Small R?
+U 1 1 666738D2
+P 1250 4600
+AR Path="/666738D2" Ref="R?"  Part="1" 
+AR Path="/6541C824/666738D2" Ref="R16"  Part="1" 
+F 0 "R16" V 1350 4550 50  0000 L CNN
+F 1 "22" V 1250 4550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1250 4600 50  0001 C CNN
+F 3 "~" H 1250 4600 50  0001 C CNN
+	1    1250 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 4600 1000 4600
+Wire Wire Line
+	1350 4600 1600 4600
 $EndSCHEMATC
