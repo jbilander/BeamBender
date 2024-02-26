@@ -431,30 +431,30 @@ Wire Wire Line
 	9150 1800 9250 1800
 Text GLabel 8400 2200 3    50   Input ~ 0
 BT1
-Text GLabel 8050 3000 0    50   Output ~ 0
+Text GLabel 10050 1800 0    50   Output ~ 0
 TCK
-Text GLabel 8050 3100 0    50   Output ~ 0
+Text GLabel 10050 1900 0    50   Output ~ 0
 TDI
-Text GLabel 8050 3200 0    50   Input ~ 0
+Text GLabel 10050 2000 0    50   Input ~ 0
 TDO
-Text GLabel 8050 3300 0    50   Input ~ 0
+Text GLabel 10050 2100 0    50   Input ~ 0
 GND
-Text GLabel 8050 3400 0    50   Output ~ 0
+Text GLabel 10050 2200 0    50   Output ~ 0
 TMS
-Text GLabel 8550 3000 2    50   Input ~ 0
+Text GLabel 10550 1800 2    50   Input ~ 0
 GND
-Text GLabel 8550 3400 2    50   Input ~ 0
+Text GLabel 10550 2200 2    50   Input ~ 0
 GND
-Text GLabel 8550 3200 2    50   Input ~ 0
+Text GLabel 10550 2000 2    50   Input ~ 0
 3V3
 Text GLabel 1600 4500 0    50   Input ~ 0
 JP2
 Text GLabel 750  2850 0    50   Input ~ 0
 BT1
 NoConn ~ 1600 3200
-Text GLabel 8550 3300 2    50   Input ~ 0
+Text GLabel 10550 2100 2    50   Input ~ 0
 JP1
-Text GLabel 8550 3100 2    50   Input ~ 0
+Text GLabel 10550 1900 2    50   Input ~ 0
 JP2
 Wire Wire Line
 	8200 1800 8300 1800
@@ -462,19 +462,19 @@ Wire Wire Line
 	8200 2200 8300 2200
 Text GLabel 8100 1800 1    50   Input ~ 0
 3V3
-Text GLabel 8550 3500 2    50   Input ~ 0
+Text GLabel 10550 2300 2    50   Input ~ 0
 BT1
-Text GLabel 8050 3500 0    50   Input ~ 0
+Text GLabel 10050 2300 0    50   Input ~ 0
 GND
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J6
 U 1 1 663407EE
-P 8250 3200
-F 0 "J6" H 8300 3617 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 8300 3526 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 8250 3200 50  0001 C CNN
-F 3 "~" H 8250 3200 50  0001 C CNN
-	1    8250 3200
+P 10250 2000
+F 0 "J6" H 10300 2417 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 10300 2326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Horizontal" H 10250 2000 50  0001 C CNN
+F 3 "~" H 10250 2000 50  0001 C CNN
+	1    10250 2000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -533,26 +533,26 @@ Wire Wire Line
 $Comp
 L BeamBender:AK5720VT U5
 U 1 1 665688C0
-P 9950 3650
-F 0 "U5" H 9950 4265 50  0000 C CNN
-F 1 "AK5720VT" H 9950 4174 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 11100 3750 50  0001 L CNN
-F 3 "" H 11100 3650 50  0001 L CNN
-F 4 "24-bit Audio ADC" H 11100 3550 50  0001 L CNN "Description"
-	1    9950 3650
+P 9000 3600
+F 0 "U5" H 9000 4215 50  0000 C CNN
+F 1 "AK5720VT" H 9000 4124 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 10150 3700 50  0001 L CNN
+F 3 "" H 10150 3600 50  0001 L CNN
+F 4 "24-bit Audio ADC" H 10150 3500 50  0001 L CNN "Description"
+	1    9000 3600
 	1    0    0    -1  
 $EndComp
-Text GLabel 9050 3900 0    50   Input ~ 0
+Text GLabel 8300 4100 0    50   Input ~ 0
 GND
-Text GLabel 9300 3600 0    50   Input ~ 0
+Text GLabel 8350 3550 0    50   Input ~ 0
 GND
-Text GLabel 10600 4000 2    50   Output ~ 0
+Text GLabel 10100 3950 2    50   Output ~ 0
 I2S0
-Text GLabel 10600 3800 2    50   Input ~ 0
+Text GLabel 9650 3750 2    50   Input ~ 0
 MCLK
-Text GLabel 10600 3900 2    50   Output ~ 0
+Text GLabel 10100 3850 2    50   Output ~ 0
 LRCLK
-Text GLabel 10600 3700 2    50   Output ~ 0
+Text GLabel 10100 3650 2    50   Output ~ 0
 BCLK
 Text GLabel 7900 5100 0    50   Input ~ 0
 3V3
@@ -631,4 +631,49 @@ Wire Wire Line
 	1150 4600 1000 4600
 Wire Wire Line
 	1350 4600 1600 4600
+$Comp
+L Device:R_Small R17
+U 1 1 666AAB38
+P 9900 3650
+F 0 "R17" V 10000 3600 50  0000 L CNN
+F 1 "22" V 9900 3600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 9900 3650 50  0001 C CNN
+F 3 "~" H 9900 3650 50  0001 C CNN
+	1    9900 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 666AD788
+P 9900 3850
+F 0 "R18" V 9950 3650 50  0000 L CNN
+F 1 "22" V 9900 3800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 9900 3850 50  0001 C CNN
+F 3 "~" H 9900 3850 50  0001 C CNN
+	1    9900 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R19
+U 1 1 666AF72B
+P 9900 3950
+F 0 "R19" V 9800 3900 50  0000 L CNN
+F 1 "22" V 9900 3900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 9900 3950 50  0001 C CNN
+F 3 "~" H 9900 3950 50  0001 C CNN
+	1    9900 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9650 3950 9800 3950
+Wire Wire Line
+	9650 3850 9800 3850
+Wire Wire Line
+	9650 3650 9800 3650
+Wire Wire Line
+	10000 3650 10100 3650
+Wire Wire Line
+	10000 3850 10100 3850
+Wire Wire Line
+	10000 3950 10100 3950
 $EndSCHEMATC
