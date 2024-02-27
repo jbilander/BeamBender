@@ -676,4 +676,8 @@ Wire Wire Line
 	10000 3850 10100 3850
 Wire Wire Line
 	10000 3950 10100 3950
+Text GLabel 8350 3450 0    50   Input ~ 0
+L_AUDIO
+Text GLabel 8350 3350 0    50   Input ~ 0
+R_AUDIO
 $EndSCHEMATC
