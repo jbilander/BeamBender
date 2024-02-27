@@ -676,8 +676,42 @@ Wire Wire Line
 	10000 3850 10100 3850
 Wire Wire Line
 	10000 3950 10100 3950
-Text GLabel 8350 3450 0    50   Input ~ 0
+Text GLabel 7550 2950 0    50   Input ~ 0
 L_AUDIO
-Text GLabel 8350 3350 0    50   Input ~ 0
+Text GLabel 7550 2800 0    50   Input ~ 0
 R_AUDIO
+$Comp
+L Device:C_Small C?
+U 1 1 667B6179
+P 7750 2900
+F 0 "C?" H 7842 2946 50  0000 L CNN
+F 1 "10uF (1206)" H 7842 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7750 2900 50  0001 C CNN
+F 3 "~" H 7750 2900 50  0001 C CNN
+	1    7750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 667B7F1E
+P 7550 3150
+F 0 "C?" H 7350 3150 50  0000 L CNN
+F 1 "10uF (1206)" H 7150 3050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7550 3150 50  0001 C CNN
+F 3 "~" H 7550 3150 50  0001 C CNN
+	1    7550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 3450 7550 3450
+Wire Wire Line
+	7550 3450 7550 3250
+Wire Wire Line
+	7550 2800 7750 2800
+Wire Wire Line
+	7750 3000 7750 3350
+Wire Wire Line
+	7750 3350 8350 3350
+Wire Wire Line
+	7550 2950 7550 3050
 $EndSCHEMATC
