@@ -542,7 +542,7 @@ F 4 "24-bit Audio ADC" H 10150 3500 50  0001 L CNN "Description"
 	1    9000 3600
 	1    0    0    -1  
 $EndComp
-Text GLabel 8300 4100 0    50   Input ~ 0
+Text GLabel 8200 2650 1    50   Input ~ 0
 GND
 Text GLabel 8350 3550 0    50   Input ~ 0
 GND
@@ -681,21 +681,21 @@ L_AUDIO
 Text GLabel 7550 2800 0    50   Input ~ 0
 R_AUDIO
 $Comp
-L Device:C_Small C?
+L Device:C_Small C48
 U 1 1 667B6179
 P 7750 2900
-F 0 "C?" H 7842 2946 50  0000 L CNN
-F 1 "10uF (1206)" H 7842 2855 50  0000 L CNN
+F 0 "C48" H 7850 2900 50  0000 L CNN
+F 1 "10uF (1206)" H 7600 2800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7750 2900 50  0001 C CNN
 F 3 "~" H 7750 2900 50  0001 C CNN
 	1    7750 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C47
 U 1 1 667B7F1E
 P 7550 3150
-F 0 "C?" H 7350 3150 50  0000 L CNN
+F 0 "C47" H 7350 3150 50  0000 L CNN
 F 1 "10uF (1206)" H 7150 3050 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 7550 3150 50  0001 C CNN
 F 3 "~" H 7550 3150 50  0001 C CNN
@@ -714,4 +714,23 @@ Wire Wire Line
 	7750 3350 8350 3350
 Wire Wire Line
 	7550 2950 7550 3050
+$Comp
+L Device:C_Small C49
+U 1 1 667DACF3
+P 8200 2850
+F 0 "C49" H 8292 2896 50  0000 L CNN
+F 1 "0.47uF (1206)" H 8292 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 8200 2850 50  0001 C CNN
+F 3 "~" H 8200 2850 50  0001 C CNN
+	1    8200 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2950 8200 3250
+Wire Wire Line
+	8200 3250 8350 3250
+Text Label 8200 3100 0    50   ~ 0
+VCOM
+Wire Wire Line
+	8200 2650 8200 2750
 $EndSCHEMATC
