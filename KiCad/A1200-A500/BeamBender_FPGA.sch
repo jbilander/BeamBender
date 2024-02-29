@@ -804,7 +804,7 @@ F 3 "~" H 8000 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8200 4100 8000 4100
+	8200 4100 8100 4100
 Wire Wire Line
 	8000 4100 7650 4100
 Connection ~ 8000 4100
@@ -814,8 +814,6 @@ Connection ~ 7650 4100
 Text GLabel 7550 4100 0    50   Input ~ 0
 3V3
 Wire Wire Line
-	8200 4100 8200 3750
-Wire Wire Line
 	8200 3750 8350 3750
 Wire Wire Line
 	8100 3650 8100 3750
@@ -824,4 +822,50 @@ Wire Wire Line
 Wire Wire Line
 	8100 3650 8350 3650
 Connection ~ 8000 3750
+Wire Wire Line
+	8200 3750 8200 4100
+Wire Wire Line
+	8350 3850 8250 3850
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 668D7347
+P 7850 4400
+F 0 "JP1" H 7850 4300 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 7850 4514 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7850 4400 50  0001 C CNN
+F 3 "~" H 7850 4400 50  0001 C CNN
+	1    7850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R20
+U 1 1 668DB86F
+P 8100 4250
+F 0 "R20" V 8000 4250 50  0000 C CNN
+F 1 "10k" V 8100 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 8100 4250 50  0001 C CNN
+F 3 "~" H 8100 4250 50  0001 C CNN
+	1    8100 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4400 8100 4400
+Wire Wire Line
+	8250 3850 8250 4400
+Text GLabel 7550 4400 0    50   Input ~ 0
+GND
+Wire Wire Line
+	7550 4400 7700 4400
+Wire Wire Line
+	8100 4100 8100 4150
+Connection ~ 8100 4100
+Wire Wire Line
+	8100 4100 8000 4100
+Wire Wire Line
+	8100 4350 8100 4400
+Connection ~ 8100 4400
+Wire Wire Line
+	8100 4400 8250 4400
+Text Label 8250 4250 0    50   ~ 0
+GSEL
 $EndSCHEMATC
