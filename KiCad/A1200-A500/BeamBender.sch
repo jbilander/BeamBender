@@ -755,10 +755,10 @@ Wire Wire Line
 Text GLabel 3050 4550 3    50   Output ~ 0
 XTAL_27M
 $Comp
-L Device:R_Small R1
+L Device:R_Small R15
 U 1 1 65512C64
 P 3050 4350
-F 0 "R1" H 3109 4350 50  0000 L CNN
+F 0 "R15" H 3109 4350 50  0000 L CNN
 F 1 "22" V 3050 4300 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3050 4350 50  0001 C CNN
 F 3 "~" H 3050 4350 50  0001 C CNN
@@ -843,10 +843,10 @@ PD
 Wire Wire Line
 	4100 5800 4400 5800
 $Comp
-L Device:R_Small R9
+L Device:R_Small R12
 U 1 1 6531102F
 P 4100 5900
-F 0 "R9" H 4159 5900 50  0000 L CNN
+F 0 "R12" H 4159 5900 50  0000 L CNN
 F 1 "2k" V 4100 5850 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4100 5900 50  0001 C CNN
 F 3 "~" H 4100 5900 50  0001 C CNN
@@ -857,17 +857,6 @@ Wire Wire Line
 	3700 5700 3850 5700
 Text GLabel 3700 6100 0    50   Input ~ 0
 GND
-$Comp
-L Device:R_Small R10
-U 1 1 652DC9C5
-P 3850 5900
-F 0 "R10" H 3909 5900 50  0000 L CNN
-F 1 "10k" V 3750 5850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3850 5900 50  0001 C CNN
-F 3 "~" H 3850 5900 50  0001 C CNN
-	1    3850 5900
-	1    0    0    -1  
-$EndComp
 Text GLabel 3700 5700 0    50   Input ~ 0
 HPD
 Wire Wire Line
@@ -884,17 +873,6 @@ Wire Wire Line
 	4300 6750 4300 6100
 Wire Wire Line
 	4300 6100 4400 6100
-$Comp
-L Device:R_Small R5
-U 1 1 655C6F45
-P 3850 6450
-F 0 "R5" H 3700 6450 50  0000 L CNN
-F 1 "2k" V 3850 6400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3850 6450 50  0001 C CNN
-F 3 "~" H 3850 6450 50  0001 C CNN
-	1    3850 6450
-	1    0    0    -1  
-$EndComp
 Text GLabel 3550 6350 0    50   Input ~ 0
 3V3
 Wire Wire Line
@@ -904,17 +882,6 @@ Wire Wire Line
 Connection ~ 3850 6600
 Wire Wire Line
 	3850 6600 4200 6600
-$Comp
-L Device:R_Small R6
-U 1 1 655D3232
-P 4100 6450
-F 0 "R6" H 3950 6450 50  0000 L CNN
-F 1 "2k" V 4100 6400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4100 6450 50  0001 C CNN
-F 3 "~" H 4100 6450 50  0001 C CNN
-	1    4100 6450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3850 6350 4100 6350
 Connection ~ 3850 6350
@@ -973,17 +940,6 @@ Wire Wire Line
 	2850 7600 3150 7600
 Text GLabel 4400 2700 0    50   Input ~ 0
 PCLK
-$Comp
-L Device:R_Small R4
-U 1 1 656847D2
-P 6600 1300
-F 0 "R4" H 6450 1300 50  0000 L CNN
-F 1 "2k  (0603)" V 6600 1250 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6600 1300 50  0001 C CNN
-F 3 "~" H 6600 1300 50  0001 C CNN
-	1    6600 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6450 2100 6350 2100
 Wire Wire Line
@@ -1126,10 +1082,10 @@ Wire Wire Line
 Wire Wire Line
 	2350 5200 2350 5300
 $Comp
-L Device:R_Small R2
+L Device:R_Small R14
 U 1 1 6589F17E
 P 3050 5600
-F 0 "R2" H 3109 5600 50  0000 L CNN
+F 0 "R14" H 3109 5600 50  0000 L CNN
 F 1 "22" V 3050 5550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3050 5600 50  0001 C CNN
 F 3 "~" H 3050 5600 50  0001 C CNN
@@ -1325,17 +1281,6 @@ Wire Wire Line
 Wire Wire Line
 	7700 5200 7400 5200
 Connection ~ 7400 5200
-$Comp
-L Device:R_Small R11
-U 1 1 65DD51EC
-P 4500 6650
-F 0 "R11" H 4400 6800 50  0000 L CNN
-F 1 "887" H 4550 6600 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4500 6650 50  0001 C CNN
-F 3 "~" H 4500 6650 50  0001 C CNN
-	1    4500 6650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4400 6300 4400 6550
 Wire Wire Line
@@ -1770,4 +1715,59 @@ Wire Notes Line
 	10000 4700 9400 4700
 Text Notes 9600 5600 0    50   ~ 0
 0603
+$Comp
+L Device:R_Small R10
+U 1 1 656847D2
+P 6600 1300
+F 0 "R10" H 6400 1300 50  0000 L CNN
+F 1 "2k  (0603)" V 6600 1250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6600 1300 50  0001 C CNN
+F 3 "~" H 6600 1300 50  0001 C CNN
+	1    6600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R13
+U 1 1 65DD51EC
+P 4500 6650
+F 0 "R13" H 4400 6800 50  0000 L CNN
+F 1 "887" H 4550 6600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4500 6650 50  0001 C CNN
+F 3 "~" H 4500 6650 50  0001 C CNN
+	1    4500 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R22
+U 1 1 652DC9C5
+P 3850 5900
+F 0 "R22" H 3909 5900 50  0000 L CNN
+F 1 "10k" V 3750 5850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3850 5900 50  0001 C CNN
+F 3 "~" H 3850 5900 50  0001 C CNN
+	1    3850 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 655D3232
+P 4100 6450
+F 0 "R11" H 3900 6450 50  0000 L CNN
+F 1 "2k" V 4100 6400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4100 6450 50  0001 C CNN
+F 3 "~" H 4100 6450 50  0001 C CNN
+	1    4100 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 655C6F45
+P 3850 6450
+F 0 "R9" H 3700 6450 50  0000 L CNN
+F 1 "2k" V 3850 6400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3850 6450 50  0001 C CNN
+F 3 "~" H 3850 6450 50  0001 C CNN
+	1    3850 6450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
