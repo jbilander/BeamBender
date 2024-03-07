@@ -1,7 +1,19 @@
 # BeamBender
 An open source flicker fixer PCB for Amiga 1200 and 500 to be fitted under the floppy drive.
 
-WORK IN PROGRESS, NOT FINISHED, A LOT LEFT TO DO!!!
+WORK IN PROGRESS, NOT FINISHED!!!
+
+***
+
+Rev. 1A
+<br />
+<a href="images/BeamBender_flicker-fixer_A1200-A500_pic1.png">
+<img src="images/BeamBender_flicker-fixer_A1200-A500_pic1.png" width="598" height="440">
+</a>
+<br />
+<a href="images/BeamBender_flicker-fixer_A1200-A500_pic2.png">
+<img src="images/BeamBender_flicker-fixer_A1200-A500_pic2.png" width="392" height="600">
+</a>
 
 ***
 
