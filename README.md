@@ -17,13 +17,19 @@ Rev. 1A
 
 ***
 
+[ADV7513_Hardware_User_Guide.pdf](https://www.analog.com/media/en/technical-documentation/user-guides/ADV7513_Hardware_User_Guide.pdf) 
+
+[ADV7513_Programming_Guide.pdf](https://www.analog.com/media/en/technical-documentation/user-guides/ADV7513_Programming_Guide.pdf)
+
+***
+
 BOM Rev. 1A
 ---------
 Designator  | Name/Value   | Package | Notes
 -|-|-|-|
 U1 | Voltage Regulator 3.3V, <br /> LM1117-3.3 or <br /> AMS1117-3.3 | SOT-223 | 3.3V 1A Low Drop-Out (LDO) Voltage regulator. https://www.aliexpress.com/item/32869037691.html
 U2 | Gowin FPGA GW1NR-UV9LQ144PC6/I5 | LQFP-144 | FPGA - Field Programmable Gate Array, 8640 LE, 121 I/O, Embedded 64Mbit 16-bit PSRAM <br /> [GW1NR-UV9LQ144PC6/I5](https://www.mouser.com/ProductDetail/192-1NRUV9LQ144PC6I5)
-U3 | ADV7513BSWZ | TQFP-64-1EP_10x10mm_P0.5mm_EP5x5mm | 165 MHz High Performance HDMI Transmitter
+U3 | ADV7513BSWZ | TQFP-64-1EP_10x10mm_P0.5mm_EP5x5mm | 165 MHz High Performance HDMI Transmitter [ADV7513BSWZ](https://www.lcsc.com/product-detail/Video-Interface-ICs_Analog-Devices-ADV7513BSWZ_C408901.html)
 U4 | Voltage Regulator 1.8V, <br /> MCP1702T-1802E/CB | SOT-23 | 1.8V Low Drop-Out (LDO) Voltage regulator. [MCP1702T1802E-CB](https://www.mouser.com/ProductDetail/579-MCP1702T1802E-CB)
 U5 | AK5720VT | TSSOP-16 | Audio A/D Converter ICs 2ch 24bit 96K 102dB MIC ADC. [AK5720VT](https://www.mouser.se/ProductDetail/412-AK5720VT)
 X1 | Abracon ASE-27.000MHZ-L-R-T | XTAL OSC SMD 3.2 mm x 2.5 mm | Standard Clock Oscillator XO 27MHZ CMOS SMD [ASE-27.000MHZ-L-R-T](https://www.mouser.com/ProductDetail/815-ASE-27.000-LR-T)
