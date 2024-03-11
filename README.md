@@ -40,12 +40,13 @@ J2 | HDMI 1.4 Receptacle Connector 19 Position Surface Mount, Right Angle TH | H
 J3 | Phone Connectors 3.5 mm, Stereo | 3 Position Through Hole | [Kycon STX-3501-3N](https://www.mouser.com/ProductDetail/806-STX-3501-3N)
 J4 | VCC/GND Phoenix Contact 2pin 2.54mm pitch | Fixed Terminal Blocks 2P 2.54mm 90DEG | VIN +5V <br /> Be careful with orientation, check polarity BEFORE connecting anything here. You can take +5V/GND from internal floppy pin-header on Amiga motherboard.<br />[1725656](https://www.mouser.com/ProductDetail/651-1725656) or [Aliexpress](https://www.aliexpress.com/item/1005001677869988.html)
 D1-D3 | ESD Suppressors / TVS Diodes | MSOP-10 | [D5V0F4U10MR-13](https://www.mouser.com/ProductDetail/621-D5V0F4U10MR-13)
+D4 | Diode - General Purpose | 0805 | e.g. [TS4148RBG](https://www.mouser.com/ProductDetail/821-TS4148RBG) Diode in RC-debounce (R5, C34) circuit for BT1 (Button 1).
 L1-L4 | SMD Stacked Inductor 10uH | 0805 |
 C1-C13 | Capacitor 10uF | 1206 |
 C14 | Capacitor 0.47uF | 1206 | e.g. [UMK316B7474KL-T](https://www.mouser.com/ProductDetail/963-UMK316B7474KL-T)
 C15, C16 | Capacitor 1.0uF | 0805 |
-C17 | Polarized Capacitor 100uF | CP_Elec_6.3x7.7 | [Wurth SMD WCAP-AS5H 100uF](https://www.mouser.com/ProductDetail/710-865230245004)
-C18 | Polarized Capacitor 22uF | CP_Elec_5x5.8 | [Wurth SMD WCAP-AS5H 22uF](https://www.mouser.com/ProductDetail/710-865230342002)
+C17 | Polarized Capacitor 100uF | CP_Elec_6.3x7.7 | e.g. [Wurth SMD WCAP-AS5H 100uF](https://www.mouser.com/ProductDetail/710-865230245004)
+C18 | Polarized Capacitor 22uF | CP_Elec_5x5.8 | e.g. [Wurth SMD WCAP-AS5H 22uF](https://www.mouser.com/ProductDetail/710-865230342002)
 C19-C34 | Capacitor 0.1uF = 100nF | 0805 |
 C35-C49 | Capacitor 0.1uF = 100nF | 0603 |
 C50-C54 | Capacitor 0.01uF = 10nF | 0603 |
