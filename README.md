@@ -29,7 +29,20 @@ Rev. 1A
 <a href="images/BeamBender_flicker-fixer_A1200-A500_pic6.jpg">
 <img src="images/BeamBender_flicker-fixer_A1200-A500_pic6.jpg" width="256" height="192">
 </a>
-
+<br />
+<a href="images/BeamBender_flicker-fixer_A1200-A500_pic7.jpg">
+<img src="images/BeamBender_flicker-fixer_A1200-A500_pic7.jpg" width="256" height="192">
+</a>
+<a href="images/BeamBender_flicker-fixer_A1200-A500_pic8.jpg">
+<img src="images/BeamBender_flicker-fixer_A1200-A500_pic8.jpg" width="256" height="192">
+</a>
+<br />
+<a href="images/BeamBender_flicker-fixer_A1200-A500_pic9.jpg">
+<img src="images/BeamBender_flicker-fixer_A1200-A500_pic9.jpg" width="256" height="192">
+</a>
+<a href="images/BeamBender_flicker-fixer_A1200-A500_pic10.jpg">
+<img src="images/BeamBender_flicker-fixer_A1200-A500_pic10.jpg" width="256" height="192">
+</a>
 
 ***
 
