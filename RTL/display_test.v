@@ -2,13 +2,14 @@
 // (C)2023 Will Green, open source hardware released under the MIT License
 // Learn more at https://projectf.io/posts/fpga-graphics/
 //
-// Modified by J.Bilander for GW1NR-UV9LQ144P 2024-04-23
+// Modified by J.Bilander for Gowin GW1NR-UV9LQ144PC6/I5 2024-04-23
 
 `timescale 1ns / 1ps
 
 module display_test(
     input C27M,             // Input XTAL clock (27 MHz)
-    input RESET_n,          // 
+    input RESET_n,          // BT1 on BeamBender pin-header, press down button to reset
+    output reg LED,
     output PCLK,            // Pixel-clock output
     output HSYNC,           // A screen begins a new line when it receives a horizontal sync,
     output VSYNC,           //  and a new frame on a vertical sync
@@ -18,9 +19,11 @@ module display_test(
     output reg [4:0] BLUE   // 5-bit DVI blue
 );
 
-
-/*
 wire plock;             // Pixel-clock lock, indicates when Gowin rPLL generates a stable pixel-clock
+
+always @(posedge C27M) begin
+    LED <= RESET_n;
+end
 
 // generate pixel clock
 clock_480p pclk_480p(
@@ -42,7 +45,6 @@ simple_480p display_inst (
     .VSYNC(VSYNC),
     .DE(DE)
 );
-
 
 reg [4:0] paint_r;
 reg [5:0] paint_g;
@@ -138,7 +140,5 @@ always @(posedge PCLK) begin
     GREEN <= display_g;
     BLUE <= display_b;
 end
-
-*/
 
 endmodule
