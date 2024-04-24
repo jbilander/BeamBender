@@ -7,10 +7,10 @@
 `timescale 1ns / 1ps
 
 module display_test(
-    input C27M,             // Input XTAL clock (27 MHz)
+    input C50M,             // Input XTAL clock (50 MHz)
     input RESET_n,          // BT1 on BeamBender pin-header, press down button to reset
     output reg LED,
-    output PCLK,            // Pixel-clock output
+    output reg PCLK,        // Pixel-clock output
     output HSYNC,           // A screen begins a new line when it receives a horizontal sync,
     output VSYNC,           //  and a new frame on a vertical sync
     output DE,              // Data enable. This signal is high when input pixel data is valid to the transmitter and low otherwise.
@@ -19,26 +19,17 @@ module display_test(
     output reg [4:0] BLUE   // 5-bit DVI blue
 );
 
-wire plock;             // Pixel-clock lock, indicates when Gowin rPLL generates a stable pixel-clock
-
-always @(posedge C27M) begin
-    LED <= RESET_n;
+// generate the 25 MHz pixel clock
+always @(posedge C50M) begin
+    PCLK <= ~PCLK;
 end
-
-// generate pixel clock
-clock_480p pclk_480p(
-    .C27M(C27M),
-    .RESET_n(RESET_n),
-    .PCLK(PCLK),        // The rPLL generated 25.2 MHz pixel clock for 480p@60 Hz
-    .PLOCK(plock)
-);
 
 localparam CORDW = 10;      // screen coordinate width in bits
 wire [CORDW-1:0] sx, sy;    // screen coordinates
 
 simple_480p display_inst (
     .PCLK(PCLK),
-    .RST_PCLK(!plock),   // wait for clock lock
+    .RST_PCLK(!RESET_n),
     .SX(sx),
     .SY(sy),
     .HSYNC(HSYNC),
@@ -139,6 +130,7 @@ always @(posedge PCLK) begin
     RED <= display_r;
     GREEN <= display_g;
     BLUE <= display_b;
+    LED <= RESET_n;
 end
 
 endmodule
