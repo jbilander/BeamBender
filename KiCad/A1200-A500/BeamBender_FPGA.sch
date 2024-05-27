@@ -77,22 +77,12 @@ Wire Wire Line
 	2050 1050 2150 1050
 Wire Wire Line
 	2150 1250 2150 1050
-Connection ~ 2150 1050
-Wire Wire Line
-	2150 1050 2250 1050
 Wire Wire Line
 	2250 1250 2250 1050
-Connection ~ 2250 1050
-Wire Wire Line
-	2250 1050 2350 1050
 Wire Wire Line
 	2350 1250 2350 1050
-Connection ~ 2350 1050
-Wire Wire Line
-	2350 1050 2450 1050
 Wire Wire Line
 	2450 1250 2450 1050
-Connection ~ 2450 1050
 Wire Wire Line
 	2450 1050 2550 1050
 Wire Wire Line
@@ -296,16 +286,8 @@ Text GLabel 3600 650  0    50   Input ~ 0
 MODE0
 Text GLabel 3700 1000 2    50   Input ~ 0
 MODE1
-Text GLabel 1600 3100 0    50   Input ~ 0
-GND
-Text GLabel 1600 3400 0    50   Input ~ 0
-GND
 Text GLabel 1600 3700 0    50   Input ~ 0
 JP1
-Text GLabel 1600 4400 0    50   Input ~ 0
-GND
-Text GLabel 1600 3000 0    50   Input ~ 0
-GND
 NoConn ~ 1600 2550
 NoConn ~ 1600 2650
 NoConn ~ 1600 2800
@@ -331,8 +313,6 @@ NoConn ~ 4000 1250
 NoConn ~ 4100 1250
 NoConn ~ 4200 1250
 NoConn ~ 4300 1250
-NoConn ~ 4400 1250
-NoConn ~ 4500 1250
 NoConn ~ 4600 1250
 NoConn ~ 4700 1250
 NoConn ~ 4800 1250
@@ -381,36 +361,34 @@ L Device:R_Pack04 RN1
 U 1 1 6620ABBD
 P 8300 2000
 F 0 "RN1" H 8488 2046 50  0000 L CNN
-F 1 "10k" H 8488 1955 50  0000 L CNN
+F 1 "4.7k" H 8488 1955 50  0000 L CNN
 F 2 "BeamBender:RESCAF80P320X160X60-8N" V 8575 2000 50  0001 C CNN
 F 3 "~" H 8300 2000 50  0001 C CNN
 	1    8300 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 8400 1800 1    50   Input ~ 0
-3V3
 Wire Wire Line
 	4050 650  4050 750 
-Text GLabel 8100 2200 3    50   Input ~ 0
-JP1
 Text GLabel 8200 2200 3    50   Input ~ 0
+JP1
+Text GLabel 8400 2200 3    50   Input ~ 0
 TCK
-Text GLabel 8200 1800 1    50   Input ~ 0
+Text GLabel 8400 1800 1    50   Input ~ 0
 GND
-Text GLabel 8950 2200 3    50   Input ~ 0
+Text GLabel 8100 2200 3    50   Input ~ 0
 JP2
-Text GLabel 9250 2200 3    50   Input ~ 0
-RECONFIG_N
 Text GLabel 9150 2200 3    50   Input ~ 0
-DONE
+RECONFIG_N
 Text GLabel 9050 2200 3    50   Input ~ 0
+DONE
+Text GLabel 8950 2200 3    50   Input ~ 0
 READY
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 66213D44
 P 9150 2000
 F 0 "RN2" H 9338 2046 50  0000 L CNN
-F 1 "10k" H 9338 1955 50  0000 L CNN
+F 1 "4.7k" H 9338 1955 50  0000 L CNN
 F 2 "BeamBender:RESCAF80P320X160X60-8N" V 9425 2000 50  0001 C CNN
 F 3 "~" H 9150 2000 50  0001 C CNN
 	1    9150 2000
@@ -426,7 +404,7 @@ Wire Wire Line
 Connection ~ 9150 1800
 Wire Wire Line
 	9150 1800 9250 1800
-Text GLabel 8400 2200 3    50   Input ~ 0
+Text GLabel 8300 2200 3    50   Input ~ 0
 BT1
 Text GLabel 10050 1800 0    50   Output ~ 0
 TCK
@@ -444,7 +422,7 @@ Text GLabel 10550 2200 2    50   Input ~ 0
 GND
 Text GLabel 10550 2000 2    50   Input ~ 0
 3V3
-Text GLabel 1600 4500 0    50   Input ~ 0
+Text GLabel 1600 4900 0    50   Input ~ 0
 JP2
 Text GLabel 750  2850 0    50   Input ~ 0
 BT1
@@ -453,10 +431,6 @@ Text GLabel 10550 2100 2    50   Input ~ 0
 JP1
 Text GLabel 10550 1900 2    50   Input ~ 0
 JP2
-Wire Wire Line
-	8200 1800 8300 1800
-Wire Wire Line
-	8200 2200 8300 2200
 Text GLabel 8100 1800 1    50   Input ~ 0
 3V3
 Text GLabel 10550 2300 2    50   Input ~ 0
@@ -607,25 +581,25 @@ F 3 "" H 8100 5100 50  0001 C CNN
 $EndComp
 Text GLabel 6500 3950 2    50   Input ~ 0
 XTAL_24.576M
-Text GLabel 1000 4600 0    50   Output ~ 0
+Text GLabel 1000 5100 0    50   Output ~ 0
 MCLK
 $Comp
 L Device:R_Small R?
 U 1 1 666738D2
-P 1250 4600
+P 1250 5100
 AR Path="/666738D2" Ref="R?"  Part="1" 
 AR Path="/6541C824/666738D2" Ref="R17"  Part="1" 
-F 0 "R17" V 1350 4550 50  0000 L CNN
-F 1 "33" V 1250 4550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1250 4600 50  0001 C CNN
-F 3 "~" H 1250 4600 50  0001 C CNN
-	1    1250 4600
+F 0 "R17" V 1350 5050 50  0000 L CNN
+F 1 "33" V 1250 5050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 1250 5100 50  0001 C CNN
+F 3 "~" H 1250 5100 50  0001 C CNN
+	1    1250 5100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1150 4600 1000 4600
+	1150 5100 1000 5100
 Wire Wire Line
-	1350 4600 1600 4600
+	1350 5100 1600 5100
 $Comp
 L Device:R_Small R18
 U 1 1 666AAB38
@@ -753,8 +727,8 @@ L Device:C_Small C?
 U 1 1 66811715
 P 8000 3650
 AR Path="/66811715" Ref="C?"  Part="1" 
-AR Path="/6541C824/66811715" Ref="C33"  Part="1" 
-F 0 "C33" H 7850 3600 50  0000 L CNN
+AR Path="/6541C824/66811715" Ref="C32"  Part="1" 
+F 0 "C32" H 7850 3600 50  0000 L CNN
 F 1 "0.1uF (0805)" H 7750 3700 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8000 3650 50  0001 C CNN
 F 3 "~" H 8000 3650 50  0001 C CNN
@@ -792,8 +766,8 @@ L Device:C_Small C?
 U 1 1 66848700
 P 8000 4000
 AR Path="/66848700" Ref="C?"  Part="1" 
-AR Path="/6541C824/66848700" Ref="C32"  Part="1" 
-F 0 "C32" H 8100 3950 50  0000 L CNN
+AR Path="/6541C824/66848700" Ref="C31"  Part="1" 
+F 0 "C31" H 8100 3950 50  0000 L CNN
 F 1 "0.1uF (0805)" H 7750 4050 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8000 4000 50  0001 C CNN
 F 3 "~" H 8000 4000 50  0001 C CNN
@@ -918,15 +892,15 @@ Wire Wire Line
 	10100 3550 9650 3550
 Wire Wire Line
 	9650 3750 10100 3750
-Text GLabel 1600 5100 0    50   Output ~ 0
+Text GLabel 1600 5000 0    50   Output ~ 0
 PDN_RESET_N
-Text GLabel 1600 4900 0    50   Output ~ 0
+Text GLabel 4500 1250 1    50   Output ~ 0
 DIF|TDMI
 Text GLabel 10100 3350 2    50   Input ~ 0
 FSEL
 Wire Wire Line
 	9650 3350 10100 3350
-Text GLabel 1600 5000 0    50   Output ~ 0
+Text GLabel 4400 1250 1    50   Output ~ 0
 FSEL
 $Comp
 L Device:R_Small R4
@@ -941,4 +915,27 @@ F 3 "~" H 7900 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7550 4400 7800 4400
+Wire Wire Line
+	2250 1050 2350 1050
+Text GLabel 2050 1050 1    50   Input ~ 0
+3V3
+Text GLabel 2250 1050 1    50   Input ~ 0
+DVDD
+NoConn ~ 1600 3000
+NoConn ~ 1600 3100
+NoConn ~ 1600 3400
+NoConn ~ 1600 4400
+Text Label 1350 5100 0    50   ~ 0
+mclk_out
+NoConn ~ 1600 4600
+Text GLabel 9250 2200 3    50   Input ~ 0
+TDO
+NoConn ~ 1600 4500
+Text Label 1250 3300 0    50   ~ 0
+BT1_input
+Wire Wire Line
+	8100 1800 8200 1800
+Connection ~ 8200 1800
+Wire Wire Line
+	8200 1800 8300 1800
 $EndSCHEMATC

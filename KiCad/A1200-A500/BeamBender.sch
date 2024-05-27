@@ -922,14 +922,14 @@ PVDD
 Text GLabel 6000 1300 2    50   Input ~ 0
 DVDD_3V
 $Comp
-L Device:C_Small C30
+L Device:C_Small C29
 U 1 1 6563C1E1
-P 4350 7500
-F 0 "C30" H 4400 7550 50  0000 L CNN
-F 1 "0.1uF" H 4350 7650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4350 7500 50  0001 C CNN
-F 3 "~" H 4350 7500 50  0001 C CNN
-	1    4350 7500
+P 4050 7500
+F 0 "C29" H 4100 7550 50  0000 L CNN
+F 1 "0.1uF" H 4050 7650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4050 7500 50  0001 C CNN
+F 3 "~" H 4050 7500 50  0001 C CNN
+	1    4050 7500
 	1    0    0    -1  
 $EndComp
 Connection ~ 2850 7400
@@ -1030,7 +1030,7 @@ F 3 "~" H 6700 5050 50  0001 C CNN
 	1    6700 5050
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 4900 2    50   Output ~ 0
+Text GLabel 8500 4700 2    50   Output ~ 0
 DVDD
 $Comp
 L Device:C_Small C43
@@ -1121,14 +1121,14 @@ Wire Wire Line
 Wire Wire Line
 	2100 5300 2150 5300
 $Comp
-L Device:C_Small C31
+L Device:C_Small C30
 U 1 1 6591CDE3
-P 4650 7500
-F 0 "C31" H 4700 7550 50  0000 L CNN
-F 1 "0.1uF" H 4650 7650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4650 7500 50  0001 C CNN
-F 3 "~" H 4650 7500 50  0001 C CNN
-	1    4650 7500
+P 4350 7500
+F 0 "C30" H 4400 7550 50  0000 L CNN
+F 1 "0.1uF" H 4350 7650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4350 7500 50  0001 C CNN
+F 3 "~" H 4350 7500 50  0001 C CNN
+	1    4350 7500
 	1    0    0    -1  
 $EndComp
 Connection ~ 3450 7400
@@ -1367,7 +1367,7 @@ L Device:C_Small C11
 U 1 1 65ED6CB9
 P 9150 5000
 F 0 "C11" H 8950 5100 50  0000 L CNN
-F 1 "10uF (1206)" H 8550 5000 50  0000 L CNN
+F 1 "10uF (1206)" H 8650 4900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 9150 5000 50  0001 C CNN
 F 3 "~" H 9150 5000 50  0001 C CNN
 	1    9150 5000
@@ -1567,27 +1567,17 @@ Wire Notes Line
 	6050 3950 6050 3300
 Text Notes 6100 3850 0    50   ~ 0
 Drill-hole guide\nfor A500 \n12.5 mm drill
-Wire Wire Line
-	3750 7400 4050 7400
-Wire Wire Line
-	3750 7600 4050 7600
 $Comp
-L Device:C_Small C29
+L Device:C_Small C33
 U 1 1 6639D585
-P 4050 7500
-F 0 "C29" H 4100 7550 50  0000 L CNN
-F 1 "0.1uF" H 4050 7650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4050 7500 50  0001 C CNN
-F 3 "~" H 4050 7500 50  0001 C CNN
-	1    4050 7500
+P 8300 5050
+F 0 "C33" H 8350 5100 50  0000 L CNN
+F 1 "0.1uF" H 8350 5250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8300 5050 50  0001 C CNN
+F 3 "~" H 8300 5050 50  0001 C CNN
+	1    8300 5050
 	1    0    0    -1  
 $EndComp
-Connection ~ 4050 7400
-Wire Wire Line
-	4050 7400 4350 7400
-Connection ~ 4050 7600
-Wire Wire Line
-	4050 7600 4350 7600
 $Comp
 L Device:C_Small C28
 U 1 1 6639DFDF
@@ -1599,7 +1589,6 @@ F 3 "~" H 3750 7500 50  0001 C CNN
 	1    3750 7500
 	1    0    0    -1  
 $EndComp
-Connection ~ 4350 7400
 Connection ~ 4350 7600
 $Comp
 L Device:C_Small C27
@@ -1612,21 +1601,10 @@ F 3 "~" H 3450 7500 50  0001 C CNN
 	1    3450 7500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4350 7400 4650 7400
-Wire Wire Line
-	4350 7600 4650 7600
 Wire Notes Line
 	5000 7100 5000 7750
 Wire Wire Line
-	4650 7400 5350 7400
-Connection ~ 4650 7400
-Connection ~ 5350 7400
-Wire Wire Line
 	5350 7400 5650 7400
-Wire Wire Line
-	4650 7600 5350 7600
-Connection ~ 4650 7600
 Connection ~ 5350 7600
 Wire Wire Line
 	5350 7600 5650 7600
@@ -1691,8 +1669,6 @@ F 3 "~" H 5650 7500 50  0001 C CNN
 $EndComp
 Text Notes 7450 5600 0    50   ~ 0
 0603
-Wire Wire Line
-	8000 4900 8200 4900
 Wire Wire Line
 	7800 5950 8200 5950
 Wire Notes Line
@@ -1780,4 +1756,34 @@ Text GLabel 4250 5900 2    50   Input ~ 0
 GND
 Wire Wire Line
 	4200 5900 4250 5900
+Wire Wire Line
+	8300 4950 8300 4900
+Wire Wire Line
+	3750 7400 4050 7400
+Wire Wire Line
+	3750 7600 4050 7600
+Wire Wire Line
+	8000 4900 8300 4900
+Wire Wire Line
+	8300 4900 8300 4700
+Wire Wire Line
+	8300 4700 8500 4700
+Connection ~ 8300 4900
+Wire Wire Line
+	8000 5200 8300 5200
+Wire Wire Line
+	8300 5200 8300 5150
+Connection ~ 8000 5200
+Connection ~ 4050 7400
+Wire Wire Line
+	4050 7400 4350 7400
+Connection ~ 4050 7600
+Wire Wire Line
+	4050 7600 4350 7600
+Connection ~ 5350 7400
+Connection ~ 4350 7400
+Wire Wire Line
+	4350 7400 5350 7400
+Wire Wire Line
+	4350 7600 5350 7600
 $EndSCHEMATC
