@@ -840,18 +840,16 @@ Wire Wire Line
 	3850 6100 3850 6000
 Text Label 4100 5800 0    50   ~ 0
 PD
-Wire Wire Line
-	4100 5800 4400 5800
 $Comp
-L BeamBender:Resistor_Jumper_Small R12
+L Device:R_Small R12
 U 1 1 6531102F
-P 4100 5900
-F 0 "R12" V 4200 5800 50  0000 L CNN
-F 1 "2k" V 4100 5850 50  0000 L CNN
-F 2 "BeamBender:ResistorJumper-3_Open_Pad_0603" H 4100 5900 50  0001 C CNN
-F 3 "~" H 4100 5900 50  0001 C CNN
-	1    4100 5900
-	0    1    1    0   
+P 4050 5900
+F 0 "R12" H 3850 5900 50  0000 L CNN
+F 1 "2k" V 4050 5850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 4050 5900 50  0001 C CNN
+F 3 "~" H 4050 5900 50  0001 C CNN
+	1    4050 5900
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	3700 5700 3850 5700
@@ -1544,8 +1542,6 @@ Wire Wire Line
 Wire Wire Line
 	8000 5200 8000 5150
 Connection ~ 7700 5200
-Text GLabel 3950 6050 3    50   Input ~ 0
-AVDD
 $Comp
 L BeamBender:Drill_hole J5
 U 1 1 6604994A
@@ -1746,16 +1742,8 @@ F 3 "~" H 3850 6450 50  0001 C CNN
 	1    3850 6450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 5800 4100 5850
-Wire Wire Line
-	4000 5900 3950 5900
-Wire Wire Line
-	3950 5900 3950 6050
-Text GLabel 4250 5900 2    50   Input ~ 0
+Text GLabel 4050 6100 3    50   Input ~ 0
 GND
-Wire Wire Line
-	4200 5900 4250 5900
 Wire Wire Line
 	8300 4950 8300 4900
 Wire Wire Line
@@ -1806,4 +1794,8 @@ Wire Wire Line
 Wire Wire Line
 	8650 5200 8650 5150
 Connection ~ 8300 5200
+Wire Wire Line
+	4050 5800 4400 5800
+Wire Wire Line
+	4050 6000 4050 6100
 $EndSCHEMATC
