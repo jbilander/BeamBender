@@ -1,4 +1,3 @@
 (sym_lib_table
   (lib (name BeamBender)(type Legacy)(uri ${KIPRJMOD}/BeamBender.lib)(options "")(descr ""))
-  (lib (name STX-3501-3N)(type Legacy)(uri ${KIPRJMOD}/STX-3501-3N.lib)(options "")(descr ""))
 )
