@@ -320,21 +320,21 @@ Text GLabel 6050 900  1    50   Output ~ 0
 CK+
 Text GLabel 6150 900  1    50   Output ~ 0
 CK-
-Text GLabel 8150 3250 0    50   Input ~ 0
+Text GLabel 8150 2900 0    50   Input ~ 0
 CK-
-Text GLabel 8150 2800 0    50   Input ~ 0
+Text GLabel 8150 2450 0    50   Input ~ 0
 CK+
-Text GLabel 9250 3250 2    50   Input ~ 0
+Text GLabel 9250 2900 2    50   Input ~ 0
 CK-
-Text GLabel 9250 2800 2    50   Input ~ 0
+Text GLabel 9250 2450 2    50   Input ~ 0
 CK+
-Text GLabel 8150 2700 0    50   Input ~ 0
+Text GLabel 8150 2350 0    50   Input ~ 0
 D0-
-Text GLabel 8150 2500 0    50   Input ~ 0
+Text GLabel 8150 2150 0    50   Input ~ 0
 D0+
-Text GLabel 9250 2700 2    50   Input ~ 0
+Text GLabel 9250 2350 2    50   Input ~ 0
 D0-
-Text GLabel 9250 2500 2    50   Input ~ 0
+Text GLabel 9250 2150 2    50   Input ~ 0
 D0+
 Text GLabel 10150 2250 0    50   Input ~ 0
 CK-
@@ -344,19 +344,19 @@ Text GLabel 10150 2050 0    50   Input ~ 0
 D0-
 Text GLabel 10150 1950 0    50   Input ~ 0
 D0+
-Text GLabel 8150 2400 0    50   Input ~ 0
+Text GLabel 8150 2050 0    50   Input ~ 0
 D1-
-Text GLabel 8150 1950 0    50   Input ~ 0
+Text GLabel 8150 1600 0    50   Input ~ 0
 D1+
-Text GLabel 9250 2400 2    50   Input ~ 0
+Text GLabel 9250 2050 2    50   Input ~ 0
 D1-
-Text GLabel 9250 1950 2    50   Input ~ 0
+Text GLabel 9250 1600 2    50   Input ~ 0
 D1+
-Text GLabel 9250 1850 2    50   Input ~ 0
+Text GLabel 9250 1500 2    50   Input ~ 0
 D2-
-Text GLabel 9250 1650 2    50   Input ~ 0
+Text GLabel 9250 1300 2    50   Input ~ 0
 D2+
-Text GLabel 9250 2600 2    50   Input ~ 0
+Text GLabel 9250 2250 2    50   Input ~ 0
 GND
 Text GLabel 10150 1850 0    50   Input ~ 0
 D1-
@@ -368,7 +368,7 @@ Text GLabel 10150 1550 0    50   Input ~ 0
 D2+
 Text GLabel 10150 3050 0    50   Output ~ 0
 HPD
-Text GLabel 8150 3650 0    50   Output ~ 0
+Text GLabel 8150 3300 0    50   Output ~ 0
 HPD
 Wire Wire Line
 	10750 3450 10750 3500
@@ -385,15 +385,15 @@ Text GLabel 7400 2400 3    50   BiDi ~ 0
 DDC_SDA
 Text GLabel 10150 2750 0    50   BiDi ~ 0
 DDC_SDA
-Text GLabel 8150 3350 0    50   Input ~ 0
+Text GLabel 8150 3000 0    50   Input ~ 0
 DDC_SCL
-Text GLabel 9250 3350 2    50   Output ~ 0
+Text GLabel 9250 3000 2    50   Output ~ 0
 DDC_SCL
-Text GLabel 8150 3550 0    50   BiDi ~ 0
+Text GLabel 8150 3200 0    50   BiDi ~ 0
 DDC_SDA
-Text GLabel 9250 3550 2    50   BiDi ~ 0
+Text GLabel 9250 3200 2    50   BiDi ~ 0
 DDC_SDA
-Text GLabel 9250 3450 2    50   Input ~ 0
+Text GLabel 9250 3100 2    50   Input ~ 0
 GND
 $Comp
 L Device:R_Small R16
@@ -499,7 +499,7 @@ F 3 "~" H 5250 6250 50  0001 C CNN
 	1    5250 6250
 	1    0    0    -1  
 $EndComp
-Text GLabel 8150 3450 0    50   Input ~ 0
+Text GLabel 8150 3100 0    50   Input ~ 0
 GND
 $Comp
 L Device:C_Small C45
@@ -1322,47 +1322,47 @@ Text GLabel 6800 2400 2    50   Input ~ 0
 CVCC12
 Text GLabel 6800 1800 2    50   Input ~ 0
 CVCC12
-Text GLabel 8150 1850 0    50   Input ~ 0
+Text GLabel 8150 1500 0    50   Input ~ 0
 D2-
-Text GLabel 8150 1650 0    50   Input ~ 0
+Text GLabel 8150 1300 0    50   Input ~ 0
 D2+
-Text GLabel 9250 1750 2    50   Input ~ 0
+Text GLabel 9250 1400 2    50   Input ~ 0
 GND
-Text GLabel 8150 1750 0    50   Input ~ 0
+Text GLabel 8150 1400 0    50   Input ~ 0
 GND
 $Comp
 L BeamBender:D5V0F4U10LP-7 D1
 U 1 1 66891DBB
-P 8700 1750
-F 0 "D1" H 8700 2215 50  0000 C CNN
-F 1 "D5V0F4U10LP-7" H 8700 2124 50  0000 C CNN
-F 2 "BeamBender:Diodes_UDFN-10_1.0x2.5mm_P0.5mm_HandSolder" H 9550 2050 50  0001 L CNN
-F 3 "" H 9550 1950 50  0001 L CNN
-	1    8700 1750
+P 8700 1400
+F 0 "D1" H 8700 1865 50  0000 C CNN
+F 1 "D5V0F4U10LP-7" H 8700 1774 50  0000 C CNN
+F 2 "BeamBender:Diodes_UDFN-10_1.0x2.5mm_P0.5mm_HandSolder" H 9550 1700 50  0001 L CNN
+F 3 "" H 9550 1600 50  0001 L CNN
+	1    8700 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L BeamBender:D5V0F4U10LP-7 D2
 U 1 1 6690FA99
-P 8700 2600
-F 0 "D2" H 8700 3065 50  0000 C CNN
-F 1 "D5V0F4U10LP-7" H 8700 2974 50  0000 C CNN
-F 2 "BeamBender:Diodes_UDFN-10_1.0x2.5mm_P0.5mm_HandSolder" H 9550 2900 50  0001 L CNN
-F 3 "" H 9550 2800 50  0001 L CNN
-	1    8700 2600
+P 8700 2250
+F 0 "D2" H 8700 2715 50  0000 C CNN
+F 1 "D5V0F4U10LP-7" H 8700 2624 50  0000 C CNN
+F 2 "BeamBender:Diodes_UDFN-10_1.0x2.5mm_P0.5mm_HandSolder" H 9550 2550 50  0001 L CNN
+F 3 "" H 9550 2450 50  0001 L CNN
+	1    8700 2250
 	1    0    0    -1  
 $EndComp
-Text GLabel 8150 2600 0    50   Input ~ 0
+Text GLabel 8150 2250 0    50   Input ~ 0
 GND
 $Comp
 L BeamBender:D5V0F4U10LP-7 D3
 U 1 1 6696806F
-P 8700 3450
-F 0 "D3" H 8700 3915 50  0000 C CNN
-F 1 "D5V0F4U10LP-7" H 8700 3824 50  0000 C CNN
-F 2 "BeamBender:Diodes_UDFN-10_1.0x2.5mm_P0.5mm_HandSolder" H 9550 3750 50  0001 L CNN
-F 3 "" H 9550 3650 50  0001 L CNN
-	1    8700 3450
+P 8700 3100
+F 0 "D3" H 8700 3565 50  0000 C CNN
+F 1 "D5V0F4U10LP-7" H 8700 3474 50  0000 C CNN
+F 2 "BeamBender:Diodes_UDFN-10_1.0x2.5mm_P0.5mm_HandSolder" H 9550 3400 50  0001 L CNN
+F 3 "" H 9550 3300 50  0001 L CNN
+	1    8700 3100
 	1    0    0    -1  
 $EndComp
 Text Label 6450 4200 0    50   ~ 0
@@ -1373,7 +1373,7 @@ Text Label 6800 3200 0    50   ~ 0
 SD2
 Text Label 6800 3100 0    50   ~ 0
 SD1
-Text GLabel 9250 3650 2    50   Input ~ 0
+Text GLabel 9250 3300 2    50   Input ~ 0
 HPD
 Wire Wire Line
 	6800 650  6950 650 
@@ -1607,9 +1607,9 @@ Wire Wire Line
 	9800 4800 10200 4800
 Text GLabel 4850 900  1    50   BiDi ~ 0
 CEC_A
-Text GLabel 9250 1550 2    50   BiDi ~ 0
+Text GLabel 9250 1200 2    50   BiDi ~ 0
 CEC_A
-Text GLabel 8150 1550 0    50   BiDi ~ 0
+Text GLabel 8150 1200 0    50   BiDi ~ 0
 CEC_A
 Text GLabel 10150 2450 0    50   BiDi ~ 0
 CEC_A
@@ -1800,4 +1800,19 @@ Wire Wire Line
 Connection ~ 7500 2200
 Wire Wire Line
 	7500 2200 7500 2400
+$Comp
+L BeamBender:SP1003-01DTG D4
+U 1 1 66ACA9ED
+P 8400 3900
+F 0 "D4" H 8700 4165 50  0000 C CNN
+F 1 "SP1003-01DTG" H 8700 4074 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 8800 4050 50  0001 L BNN
+F 3 "" H 8800 3950 50  0001 L BNN
+	1    8400 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 8400 3900 0    50   Input ~ 0
+VCC
+Text GLabel 9000 3900 2    50   Input ~ 0
+GND
 $EndSCHEMATC

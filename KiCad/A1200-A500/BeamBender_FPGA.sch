@@ -426,10 +426,10 @@ Wire Wire Line
 Wire Wire Line
 	750  3150 750  2900
 $Comp
-L Device:D_Small D4
+L Device:D_Small D5
 U 1 1 6651E93A
 P 950 2900
-F 0 "D4" H 950 2800 50  0000 C CNN
+F 0 "D5" H 950 2800 50  0000 C CNN
 F 1 "D_Small" H 900 2700 50  0001 C CNN
 F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 950 2900 50  0001 C CNN
 F 3 "~" V 950 2900 50  0001 C CNN
