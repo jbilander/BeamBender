@@ -978,7 +978,7 @@ F 3 "~" H 8750 5950 50  0001 C CNN
 	1    8750 5950
 	1    0    0    -1  
 $EndComp
-Text GLabel 6950 650  2    50   Input ~ 0
+Text GLabel 7150 650  2    50   Input ~ 0
 GND
 Text GLabel 7650 5750 1    50   Input ~ 0
 1V8
@@ -1221,12 +1221,12 @@ $EndComp
 $Comp
 L Device:R_Small R17
 U 1 1 65DD51EC
-P 6700 650
-F 0 "R17" V 6600 550 50  0000 L CNN
-F 1 "4.3k" V 6800 550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6700 650 50  0001 C CNN
-F 3 "~" H 6700 650 50  0001 C CNN
-	1    6700 650 
+P 6900 650
+F 0 "R17" V 6800 550 50  0000 L CNN
+F 1 "4.3k" V 7000 550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6900 650 50  0001 C CNN
+F 3 "~" H 6900 650 50  0001 C CNN
+	1    6900 650 
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1376,7 +1376,7 @@ SD1
 Text GLabel 9250 3300 2    50   Input ~ 0
 HPD
 Wire Wire Line
-	6800 650  6950 650 
+	7000 650  7150 650 
 Text GLabel 5350 900  1    50   Input ~ 0
 AVCC12
 Text GLabel 5950 900  1    50   Input ~ 0
@@ -1666,8 +1666,6 @@ Wire Wire Line
 Wire Wire Line
 	7500 1950 7500 1850
 Wire Wire Line
-	6600 650  6350 650 
-Wire Wire Line
 	6350 650  6350 900 
 Wire Wire Line
 	4750 900  4750 650 
@@ -1815,4 +1813,8 @@ Text GLabel 8400 3900 0    50   Input ~ 0
 VCC
 Text GLabel 9000 3900 2    50   Input ~ 0
 GND
+Text Label 6350 650  0    50   ~ 0
+EXT_SWING
+Wire Wire Line
+	6350 650  6800 650 
 $EndSCHEMATC
