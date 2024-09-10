@@ -82,7 +82,7 @@ J2 | HDMI 1.4 Receptacle Connector 19 Position Surface Mount, Right Angle TH | H
 J3 | Phone Connectors 3.5 mm, Stereo | 3 Position Through Hole | [Kycon STX-3501-3N](https://www.mouser.com/ProductDetail/806-STX-3501-3N)
 J4 | VCC/GND Phoenix Contact 2pin 2.54mm pitch | Fixed Terminal Blocks 2P 2.54mm 90DEG | VIN +5V <br /> Be careful with orientation, check polarity BEFORE connecting anything here. You can take +5V/GND from internal floppy pin-header on Amiga motherboard.<br />[1725656](https://www.mouser.com/ProductDetail/651-1725656) or [Aliexpress](https://www.aliexpress.com/item/1005001677869988.html)
 D1-D3 | ESD Suppressors / TVS Diodes | U-DFN2510-10 | [D5V0F4U10LP-7](https://www.mouser.com/ProductDetail/621-D5V0F4U10LP-7)
-D4 | ESD Suppressor / TVS Diode 1 Ch | SOD-723-2 | [SP1003-01DTG](https://www.mouser.com/ProductDetail/576-SP1003-01DTG)
+D4 | ESD Suppressor / TVS Diode 1 Ch | SOD-723-2 | [SP1003-01DTG](https://www.mouser.com/ProductDetail/576-SP1003-01DTG) Optional ESD protection for VCC.
 D5 | Diode - General Purpose | 0805 | e.g. [TS4148RBG](https://www.mouser.com/ProductDetail/821-TS4148RBG) Diode in RC-debounce (R5, C34) circuit for BT1 (Button 1).
 L1-L4 | Ferrite Bead 600ohms 100MHz .5A Monolithic | 0805 | e.g. [HZ0805E601R-10](https://www.mouser.com/ProductDetail/875-HZ0805E601R-10)
 C1-C13 | Capacitor 10uF | 1206 |
