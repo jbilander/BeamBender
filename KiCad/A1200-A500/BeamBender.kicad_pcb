@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 0.381)
+    (last_trace_width 0.1524)
     (user_trace_width 0.2032)
     (user_trace_width 0.25)
     (user_trace_width 0.254)
@@ -2870,7 +2870,7 @@
     (tags SOT-23)
     (path /67020DC7)
     (attr smd)
-    (fp_text reference U7 (at 2 -1.75 180) (layer F.SilkS)
+    (fp_text reference U6 (at 2 -1.75 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MCP1702T-1202E_CB (at 0 2.5 90) (layer F.Fab) hide
