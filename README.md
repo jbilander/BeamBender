@@ -5,6 +5,24 @@ WORK IN PROGRESS, NOT FINISHED!!!
 
 ***
 
+Rev. 1B
+<br />
+<a href="images/BeamBender_flicker-fixer_A1200-A500_pic11.jpg">
+<img src="images/BeamBender_flicker-fixer_A1200-A500_pic11.jpg" width="256" height="192">
+</a>
+<a href="images/BeamBender_flicker-fixer_A1200-A500_pic12.jpg">
+<img src="images/BeamBender_flicker-fixer_A1200-A500_pic12.jpg" width="256" height="192">
+</a>
+<br />
+<a href="images/BeamBender_flicker-fixer_A1200-A500_pic13.jpg">
+<img src="images/BeamBender_flicker-fixer_A1200-A500_pic13.jpg" width="256" height="192">
+</a>
+<a href="images/BeamBender_flicker-fixer_A1200-A500_pic14.jpg">
+<img src="images/BeamBender_flicker-fixer_A1200-A500_pic14.jpg" width="256" height="192">
+</a>
+
+***
+
 Rev. 1A
 <br />
 <a href="images/BeamBender_flicker-fixer_A1200-A500_pic1.png">
