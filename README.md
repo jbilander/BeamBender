@@ -99,7 +99,7 @@ R4, R5 | 10k Ω | 0805 |
 R6 | 0-9 Ω or solder blob| 0805 | e.g. [CR0805-J/-000ELF](https://www.mouser.com/ProductDetail/652-CR0805-J-000ELF)
 R7-R14 | 33 Ω | 0603 | e.g. [CR0603-FX-33R0ELF](https://www.mouser.com/ProductDetail/652-CR0603FX-33R0ELF)
 R15, R16 | 2k Ω | 0603 | e.g. [CR0603-FX-2001ELF](https://www.mouser.com/ProductDetail/652-CR0603-FX-2001LF)
-R17 | 4.3k Ω, 1% tolerance | 0603 | e.g. [CR0603-FX-4301ELF](https://www.mouser.com/ProductDetail/652-CR0603FX-4301ELF)
+R17 | 4.3k Ω, 1% tolerance | 0603 | e.g. [CR0603-FX-4301ELF](https://www.mouser.com/ProductDetail/652-CR0603FX-4301ELF) The recommended value is 4.3k Ω ±1% with internal source termination enabled and 5.1k Ω ±1% without internal source termination. 
 R18-R20 | 4.7k Ω | 0603 | 
 R21 | 10k Ω | 0603 |
 RN1, RN2 | CAY16A-4701F4LF RES ARRAY 4 Resistors 4.7k Ω | 1206 | [CAY16A-4701F4LF](https://eu.mouser.com/ProductDetail/652-CAY16A-4701F4LF)
