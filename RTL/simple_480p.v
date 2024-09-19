@@ -16,11 +16,32 @@ module simple_480p(
     output DE               // data enable (low in blanking interval)
 );
 
+/*
+Horizontal timing (line)
+Polarity of horizontal sync pulse is negative.
+Visible area	640	25.422045680238
+Front porch	16	0.63555114200596
+Sync pulse	96	3.8133068520357
+Back porch	48	1.9066534260179
+Whole line	800	31.777557100298
+*/
+
 // horizontal timings
 parameter HA_END = 639;           // end of active pixels
 parameter HS_STA = HA_END + 16;   // sync starts after front porch
 parameter HS_END = HS_STA + 96;   // sync ends
 parameter LINE   = 799;           // last pixel on line (after back porch)
+
+/*
+Vertical timing (frame)
+Polarity of vertical sync pulse is negative.
+Frame part	Lines	Time [ms]
+Visible area	480	15.253227408143
+Front porch	10	0.31777557100298
+Sync pulse	2	0.063555114200596
+Back porch	33	1.0486593843098
+Whole frame	525	16.683217477656
+*/
 
 // vertical timings
 parameter VA_END = 479;           // end of active pixels

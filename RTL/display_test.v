@@ -7,21 +7,36 @@
 `timescale 1ns / 1ps
 
 module display_test(
-    input C50M,             // Input XTAL clock (50 MHz)
-    input RESET_n,          // BT1 on BeamBender pin-header, press down button to reset
-    output reg LED,
-    output reg PCLK,        // Pixel-clock output
+    input C24M,             // Input XTAL clock (24.576 MHz)
+    input C27M,             // Input XTAL clock (27 MHz)
+    output reg HDMI_RST_n,  // 
+    output PCLK,            // Pixel-clock output
     output HSYNC,           // A screen begins a new line when it receives a horizontal sync,
     output VSYNC,           //  and a new frame on a vertical sync
     output DE,              // Data enable. This signal is high when input pixel data is valid to the transmitter and low otherwise.
-    output reg [4:0] RED,   // 5-bit DVI red
-    output reg [5:0] GREEN, // 6-bit DVI green
-    output reg [4:0] BLUE   // 5-bit DVI blue
+    output [4:0] RED,       // 5-bit DVI red
+    output [5:0] GREEN,     // 6-bit DVI green
+    output [4:0] BLUE,      // 5-bit DVI blue
+    output MCLK,
+    output DIF_TDMI
 );
 
-// generate the 25 MHz pixel clock
-always @(posedge C50M) begin
-    PCLK <= ~PCLK;
+assign PCLK = C27M;
+assign MCLK = C24M;
+assign DIF_TDMI = 1'b0;
+assign RST_n = 1'b1;
+
+reg [23:0] counter;
+
+always @ (posedge C27M) begin
+
+    if (counter < 10000000) begin
+        counter <= counter + 1'b1;
+        HDMI_RST_n <= 1'b0;
+    end else begin
+        HDMI_RST_n <= 1'b1;
+    end
+
 end
 
 localparam CORDW = 10;      // screen coordinate width in bits
@@ -29,7 +44,7 @@ wire [CORDW-1:0] sx, sy;    // screen coordinates
 
 simple_480p display_inst (
     .PCLK(PCLK),
-    .RST_PCLK(!RESET_n),
+    .RST_PCLK(!RST_n),
     .SX(sx),
     .SY(sy),
     .HSYNC(HSYNC),
@@ -120,17 +135,9 @@ always @*
         paint_b = 5'h00;
     end
 
-// display colour: paint colour but black in blanking interval
-wire [4:0] display_r = DE ? paint_r : 5'h00;
-wire [5:0] display_g = DE ? paint_g : 6'h00;
-wire [4:0] display_b = DE ? paint_b : 5'h00;
-
-//Pmod output
-always @(posedge PCLK) begin
-    RED <= display_r;
-    GREEN <= display_g;
-    BLUE <= display_b;
-    LED <= RESET_n;
-end
+// paint colour but black in blanking interval
+assign RED = DE ? paint_r : 5'h00;
+assign GREEN = DE ? paint_g : 6'h00;
+assign BLUE = DE ? paint_b : 5'h00;
 
 endmodule
